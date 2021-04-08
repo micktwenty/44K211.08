@@ -1,7 +1,4 @@
-Create database BOOKINGMOTORBIKE
-Use BOOKINGMOTORBIKE
-
-Create table KHACHHANG
+﻿Create table KHACHHANG
 (
   MaKH varchar(50) not null primary key,
   TenKH nvarchar(150) not null,
@@ -53,16 +50,29 @@ create table HOADON_CT
 	ThanhTien int not null,
 	primary key (MaHD, MaXe)
 )
-
-Alter table HOADON
-Add constraint FK_KHACHHANG foreign key (MaKH) references KHACHHANG(MaKH)
-
-Alter table HOADON_CT
-Add constraint FK_HOADON foreign key (MaHD) references HOADON(MaHD)
-
-Alter table HOADON_CT
-Add constraint FK_XE foreign key (MaXe) references Xe(MaXe)
-
-Alter table XE
-Add constraint FK_NHACUNGCAP foreign key (MaNCC) references NHACUNGCAP(MaNCC)
-
+create table [User]
+(
+	TaiKhoan varchar(50) primary key not null,
+	MatKhau varchar(50) not null
+)
+INSERT INTO KHACHHANG
+VALUES	('KH0001', N'Nguyễn Quốc Thiện', N'147 Phan Thanh-Thanh Khê',0366489257,'2000-05-24',197405367),
+		('KH0002', N'Nguyễn Thị Thúy', N'23 Hoàng DIệu-Thanh Khê',0935877152,'2000-01-04',197401977),
+		('KH0003', N'Phạm Thị Thanh Quý', N'21/3 Phan Tứ-Ngũ Hành Sơn',0357258963,'1995-12-24',19687945),
+		('KH0004', N'Nguyễn Thị Đoan Hạnh', N'147 Phan Thanh-Thanh Khê',0367327578,'1999-05-27',197258167),
+		('KH0005', N'Nguyễn Quang Thành', N'Bạch Đằng-Thanh Khê',0369159753,'1991-07-12',197259123),
+		('KH0006', N'Trương Thị Hồng Nga', N'45 Phan Châu Trinh-Thanh Khê',0369587426,'1987-05-12',194852367)
+INSERT INTO XE(MaXe, LoaiXe, TenXe, BienSo, GiaXe, TrangThai,HinhAnh, MaNCC)
+VALUES	('MX0001', 'Honda', 'Vision', '43D1-25554', 150,1,'HondaVision.png','NCC001'),
+		('MX0002', 'Yamaha', 'Latte', '43D1-25854', 150,1,'YamahaLatte.png','NCC001'),
+		('MX0003', 'Yamaha', 'Sirius', '43D1-15589', 100,0,'YamahaSirius.png','NCC003'),
+		('MX0004', 'Honda', 'AirBlade', '43D1-167258', 180,1,'HondaAirBlade.png','NCC001'),
+		('MX0005', 'Honda', 'Vision', '43P1-002345', 150,0,'HondaVision.png','NCC002'),
+		('MX0006', 'Honda', 'Lead', '43D1-102357', 180,0,'HondaLead.png','NCC002')
+INSERT INTO NHACUNGCAP
+VALUES	('NCC001', N'Cửa hàng thuê xe Tân Cương', '34 Nguyễn Công Trứ-Sơn Trà',0123584692),
+		('NCC002', N'Cửa hàng thuê xe Phúc Đại', '1025 Ngô Quyền-Sơn Trà',0936599236),
+		('NCC003', N'Cửa hàng thuê xe Hạnh Phúc', '39 Phan Hành Sơn-Ngũ Hành Sơn',036815222),
+		('NCC004', N'Cửa hàng thuê xe Đức Tín', '20 Phan Thanh-Thanh Khê',0366522444),
+		('NCC005', N'Cửa hàng thuê xe Hoa Hoa', '32/12 Nguyễn Văn Thoại-Sơn Trà',0123555789),
+		('NCC006', N'Cửa hàng thuê xe Hải Âu', '123 Nguyễn Lương Bằng-Hòa Khánh',0333345678)
