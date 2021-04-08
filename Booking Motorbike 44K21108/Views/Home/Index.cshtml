@@ -1,8 +1,17 @@
-﻿
+﻿@using Booking_Motorbike_44K21108.Models;
+@model IEnumerable<XE>
+
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Layout/HomePage.cshtml";
 }
+@{
+    IEnumerable<XE> lstXe = (IEnumerable<XE>)ViewBag.LstXe;
+    IEnumerable<XE> lstXey = (IEnumerable<XE>)ViewBag.LstXey;
+}
+}
 
-<h2>Index</h2>
+<div class="container">
+    @Html.Partial("~/Views/SanPham/SanPhamStyle1Partial.cshtml",lstXe)
 
+</div>
