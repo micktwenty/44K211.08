@@ -181,47 +181,17 @@
     <Content Include="Content\css\flexslider.css" />
     <Content Include="Content\css\memenu.css" />
     <Content Include="Content\css\style.css" />
-    <Content Include="Content\images\1.jpg" />
-    <Content Include="Content\images\b1.jpg" />
-    <Content Include="Content\images\b2.jpg" />
-    <Content Include="Content\images\b3.jpg" />
-    <Content Include="Content\images\b4.jpg" />
-    <Content Include="Content\images\b5.jpg" />
-    <Content Include="Content\images\blo.jpg" />
-    <Content Include="Content\images\cart.png" />
-    <Content Include="Content\images\close_1.png" />
-    <Content Include="Content\images\co.png" />
-    <Content Include="Content\images\img-sprite.png" />
-    <Content Include="Content\images\lo.png" />
-    <Content Include="Content\images\lo1.png" />
-    <Content Include="Content\images\lo2.png" />
-    <Content Include="Content\images\lo3.png" />
-    <Content Include="Content\images\lo4.png" />
-    <Content Include="Content\images\lo5.png" />
+    <Content Include="Content\images\Honda AirBlade.png" />
+    <Content Include="Content\images\HondaFuture125F1.png" />
+    <Content Include="Content\images\HondaLead.png" />
+    <Content Include="Content\images\HondaWaveAlpha.png" />
+    <Content Include="Content\images\HondaXr.png" />
     <Content Include="Content\images\logo.png" />
-    <Content Include="Content\images\p1.jpg" />
-    <Content Include="Content\images\p2.jpg" />
-    <Content Include="Content\images\p3.jpg" />
-    <Content Include="Content\images\p4.jpg" />
-    <Content Include="Content\images\pi.jpg" />
-    <Content Include="Content\images\pi1.jpg" />
-    <Content Include="Content\images\pi2.jpg" />
-    <Content Include="Content\images\pi3.jpg" />
-    <Content Include="Content\images\pi4.jpg" />
-    <Content Include="Content\images\pi5.jpg" />
-    <Content Include="Content\images\pic1.jpg" />
-    <Content Include="Content\images\pic2.jpg" />
-    <Content Include="Content\images\pro.jpg" />
-    <Content Include="Content\images\product1.jpg" />
-    <Content Include="Content\images\s1.jpg" />
-    <Content Include="Content\images\si.jpg" />
-    <Content Include="Content\images\si1.jpg" />
-    <Content Include="Content\images\si2.jpg" />
-    <Content Include="Content\images\t1.jpg" />
-    <Content Include="Content\images\t2.jpg" />
-    <Content Include="Content\images\t3.jpg" />
-    <Content Include="Content\images\t4.jpg" />
-    <Content Include="Content\images\tick1.png" />
+    <Content Include="Content\images\YamahaExciter.png" />
+    <Content Include="Content\images\YamahaGrande2020.png" />
+    <Content Include="Content\images\YamahaJanus.png" />
+    <Content Include="Content\images\YamahaJupiterF1GP.png" />
+    <Content Include="Content\images\YamahaSirius.png" />
     <Content Include="Content\js\jquery.flexslider.js" />
     <Content Include="Content\js\jquery.min.js" />
     <Content Include="Content\js\main.js" />
@@ -277,10 +247,10 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Layout\HomePage.cshtml" />
+    <Content Include="Views\SanPham\SanPhamStyle1Partial.cshtml" />
+    <Content Include="Views\SanPham\SanPhamStyle2Partial.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\SanPham\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
