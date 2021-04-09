@@ -14,10 +14,10 @@ namespace Booking_Motorbike_44K21108.Controllers
         public ActionResult Index()
         {
             //tao viewbag
-            var lstXe = db.XEs.Where(n => n.LoaiXe == "Honda");
+            var lstXe = db.XEs.Where(n => n.LoaiXe == "Honda" && n.TrangThai==false);
             ViewBag.LstXe = lstXe;
 
-            var lstXey = db.XEs.Where(n => n.LoaiXe == "Yamaha");
+            var lstXey = db.XEs.Where(n => n.LoaiXe == "Yamaha" && n.TrangThai == false);
             ViewBag.LstXey = lstXey;
 
 
