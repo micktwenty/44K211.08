@@ -9,9 +9,13 @@
     IEnumerable<XE> lstXe = (IEnumerable<XE>)ViewBag.LstXe;
     IEnumerable<XE> lstXey = (IEnumerable<XE>)ViewBag.LstXey;
 }
-}
+
 
 <div class="container">
-    @Html.Partial("~/Views/SanPham/SanPhamStyle1Partial.cshtml",lstXe)
+    @Html.Partial("~/Views/SanPham/SanPhamStyle1Partial.cshtml", lstXe)
+
+</div>
+<div class="container">
+@Html.Partial("~/Views/SanPham/SanPhamStyle2Partial.cshtml", lstXey)
 
 </div>
