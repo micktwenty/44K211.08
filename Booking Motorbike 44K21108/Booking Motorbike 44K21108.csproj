@@ -148,6 +148,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BMModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Generated\Database.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\HOADON.cs">
       <DependentUpon>BMModel.tt</DependentUpon>
     </Compile>
@@ -160,6 +165,7 @@
     <Compile Include="Models\NHACUNGCAP.cs">
       <DependentUpon>BMModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\PetaPoco.cs" />
     <Compile Include="Models\User.cs">
       <DependentUpon>BMModel.tt</DependentUpon>
     </Compile>
@@ -221,6 +227,10 @@
       <DependentUpon>BMModel.edmx</DependentUpon>
       <LastGenOutput>BMModel.cs</LastGenOutput>
     </Content>
+    <Content Include="Models\Generated\Database.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Database.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <EntityDeploy Include="Models\BMModel.edmx">
@@ -230,6 +240,8 @@
     <Content Include="Models\BMModel.edmx.diagram">
       <DependentUpon>BMModel.edmx</DependentUpon>
     </Content>
+    <Content Include="Models\Generated\PetaPoco.Generator.ttinclude" />
+    <Content Include="Models\Generated\PetaPoco.Core.ttinclude" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -258,8 +270,11 @@
     <Content Include="Views\Layout\HomePage.cshtml" />
     <Content Include="Views\SanPham\SanPhamStyle1Partial.cshtml" />
     <Content Include="Views\SanPham\SanPhamStyle2Partial.cshtml" />
+    <Content Include="Views\Home\Details.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\Details\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

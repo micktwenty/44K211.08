@@ -10,6 +10,7 @@
 namespace Booking_Motorbike_44K21108.Models
 {
     using System;
+    using System.Collections.Generic;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
@@ -24,7 +25,12 @@ namespace Booking_Motorbike_44K21108.Models
         {
             throw new UnintentionalCodeFirstException();
         }
-    
+
+        internal IEnumerable<T> Query<T>(string v, string a)
+        {
+            throw new NotImplementedException();
+        }
+
         public virtual DbSet<HOADON> HOADONs { get; set; }
         public virtual DbSet<HOADON_CT> HOADON_CT { get; set; }
         public virtual DbSet<KHACHHANG> KHACHHANGs { get; set; }
