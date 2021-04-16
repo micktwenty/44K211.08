@@ -33,6 +33,11 @@ namespace Booking_Motorbike_44K21108.Controllers
         {
             return View();
         }
+
+        public ActionResult thongtinxe()
+        {
+            return View();
+        }
      
 
     }

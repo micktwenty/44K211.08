@@ -188,6 +188,7 @@
     <Content Include="Content\css\flexslider.css" />
     <Content Include="Content\css\memenu.css" />
     <Content Include="Content\css\style-dangnhap.css" />
+    <Content Include="Content\css\style-thongtinxe.css" />
     <Content Include="Content\css\style.css" />
     <Content Include="Content\images\Honda AirBlade.png" />
     <Content Include="Content\images\HondaFuture125F1.png" />
@@ -201,6 +202,7 @@
     <Content Include="Content\images\PiaggioZip.png" />
     <Content Include="Content\images\SuzukiImplus.png" />
     <Content Include="Content\images\SuzukiRaider.png" />
+    <Content Include="Content\images\up.png" />
     <Content Include="Content\images\YamahaAcruzo.png" />
     <Content Include="Content\images\YamahaExciter.png" />
     <Content Include="Content\images\YamahaGrande2020.png" />
@@ -212,11 +214,17 @@
     <Content Include="Content\js\dangnhap-1.js" />
     <Content Include="Content\js\easyResponsiveTabs.js" />
     <Content Include="Content\js\fontawesome.js" />
+    <Content Include="Content\js\jquery.fileupload.thongtinxe.js" />
     <Content Include="Content\js\jquery.flexslider.js" />
+    <Content Include="Content\js\jquery.iframe-transport.thongtinxe.js" />
+    <Content Include="Content\js\jquery.knob.thongtinxe.js" />
     <Content Include="Content\js\jquery.min.js" />
+    <Content Include="Content\js\jquery.min.thongtinxe.js" />
+    <Content Include="Content\js\jquery.ui.widget.thongtinxe.js" />
     <Content Include="Content\js\main.js" />
     <Content Include="Content\js\memenu.js" />
     <Content Include="Content\js\responsiveslides.min.js" />
+    <Content Include="Content\js\script.thongtinxe.js" />
     <Content Include="Content\js\simpleCart.min.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -277,6 +285,7 @@
     <Content Include="Views\SanPham\SanPhamStyle2Partial.cshtml" />
     <Content Include="Views\Home\Details.cshtml" />
     <Content Include="Views\Home\dangnhap.cshtml" />
+    <Content Include="Views\Home\thongtinxe.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Details\" />
