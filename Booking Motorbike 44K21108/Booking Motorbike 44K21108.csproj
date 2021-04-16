@@ -184,8 +184,10 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\bootstrap.css" />
+    <Content Include="Content\css\dangnhap.css" />
     <Content Include="Content\css\flexslider.css" />
     <Content Include="Content\css\memenu.css" />
+    <Content Include="Content\css\style-dangnhap.css" />
     <Content Include="Content\css\style.css" />
     <Content Include="Content\images\Honda AirBlade.png" />
     <Content Include="Content\images\HondaFuture125F1.png" />
@@ -207,6 +209,9 @@
     <Content Include="Content\images\YamahaLatte.png" />
     <Content Include="Content\images\YamahaNVX.png" />
     <Content Include="Content\images\YamahaSirius.png" />
+    <Content Include="Content\js\dangnhap-1.js" />
+    <Content Include="Content\js\easyResponsiveTabs.js" />
+    <Content Include="Content\js\fontawesome.js" />
     <Content Include="Content\js\jquery.flexslider.js" />
     <Content Include="Content\js\jquery.min.js" />
     <Content Include="Content\js\main.js" />
@@ -271,6 +276,7 @@
     <Content Include="Views\SanPham\SanPhamStyle1Partial.cshtml" />
     <Content Include="Views\SanPham\SanPhamStyle2Partial.cshtml" />
     <Content Include="Views\Home\Details.cshtml" />
+    <Content Include="Views\Home\dangnhap.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Details\" />

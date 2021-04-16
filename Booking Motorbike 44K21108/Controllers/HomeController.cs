@@ -28,6 +28,11 @@ namespace Booking_Motorbike_44K21108.Controllers
             var model = db.XEs.Find(id);
             return View(model);
         }
+
+        public ActionResult dangnhap()
+        {
+            return View();
+        }
      
 
     }
