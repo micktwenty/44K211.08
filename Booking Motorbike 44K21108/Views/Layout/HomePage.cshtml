@@ -32,7 +32,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="header-top">
             <div class="container">
                 <div class="divlogo">
-                    <img src="../Content/images/Group 77.jpg" align="left" />
+                    <img src="../Content/images/logo.png" align="left" />
                 </div>
 
 
@@ -63,10 +63,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
         </div>
         <div class="search">
-            <form>
-                <input type="text" value="Tìm kiếm " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Tìm kiếm';}">
-                <input type="submit" value="Tìm">
-            </form>
+
+                @using(Html.BeginForm("LayTuKhoa", "TimKiem"))
+                    {
+                        <input type="text" name="sTuKhoa" placeholder="Nhập tên xe hoặc hãng" />
+                        <input type="submit"  value="Tìm" />
+
+                    }
+
         </div>
         <div class="container">
 

@@ -80,9 +80,9 @@ a.item_add {
 .header {
   border-bottom: 1px solid #000;
 }
-.header-top{
-	background: #000;
-	  padding: 15px 0;
+.header-top {
+	background: #EEB401;
+	padding: 15px 0;
 }
 .divlogo {
 	float: left
