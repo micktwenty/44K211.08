@@ -173,8 +173,8 @@
                         <div class="col-md-6">
                             <div class="image">
 
-                                
-                                <img class="img-responsive"  src="@Url.Content("~/Content/images/" + Model.HinhAnh)" />
+
+                                <img class="img-responsive" src="@Url.Content("~/Content/images/" + Model.HinhAnh)" />
                                 @*<div class="image-more">
                                         <ul class="row">
                                             <li class="col-lg-3 col-sm-3 col-xs-4">
@@ -203,23 +203,24 @@
                                     </ul>
                                 </div>
                                 <div class="price"><b>Giá thuê: <span>@Model.GiaXe</span>/ngày</b> </div>
-                               
-                               
-                                <div class="well"><a href="#" class="btn btn-2 ">Đăng kí thuê</a></div>
-                               
+
+                                <input type="button" value="Đăng kí thuê" id="btndangkithue" class="btn btn-primary" />
+
+                                @*<div class="well"><a href="#" id="btndangkithue">Đăng kí thuê</a></div>*@
+
                             </div>
                         </div>
                         <div class="clear"></div>
                     </div>
                     <div class="product-desc">
                         <ul class="nav nav-tabs">
-                         
+
                             <li><a href="#review">Để lại đánh giá của bạn</a></li>
                         </ul>
                         <div class="tab-pane fade">
 
                             <div class="review-form">
-                              
+
                                 <form name="form1" id="ff" method="post" action="review.php">
                                     <label>
                                         <span>Enter your name:</span>
@@ -236,11 +237,11 @@
                                 </form>
                             </div>
                             @*<div id="description" class="tab-pane fade in active">
-            <h4>Sample Lorem Ipsum Text</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula. Pellentesque aliquam quam vel dolor. Nunc adipiscing. Sed quam odio, tempus ac, aliquam molestie, varius ac, tellus. Vestibulum ut nulla aliquam risus rutrum interdum. Pellentesque lorem. Curabitur sit amet erat quis risus feugiat viverra. Pellentesque augue justo, sagittis et, lacinia at, venenatis non, arcu. Nunc nec libero. In cursus dictum risus. Etiam tristique nisl a</p>
-            <h4>Sample Lorem Ipsum Text</h4>
-            <p>Sed eget turpis a pede tempor malesuada. Vivamus quis mi at leo pulvinar hendrerit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque aliquet lacus vitae pede. Nullam mollis dolor ac nisi. Phasellus sit amet urna. Praesent pellentesque sapien sed lacus. Donec lacinia odio in odio. In sit amet elit. Maecenas gravida interdum urna. Integer pretium, arcu vitae imperdiet facilisis, elit tellus tempor nisi, vel feugiat ante velit sit amet mauris. Vivamus arcu. Integer pharetra magna ac lacus. Aliquam vitae sapien in nibh vehicula auctor. Suspendisse leo mauris, pulvinar sed, tempor et, consequat ac, lacus. Proin velit. Nulla semper lobortis mauris. Duis urna erat, ornare et, imperdiet eu, suscipit sit amet, massa. Nulla nulla nisi, pellentesque at, egestas quis, fringilla eu, diam.</p>
-        </div>*@
+                                    <h4>Sample Lorem Ipsum Text</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula. Pellentesque aliquam quam vel dolor. Nunc adipiscing. Sed quam odio, tempus ac, aliquam molestie, varius ac, tellus. Vestibulum ut nulla aliquam risus rutrum interdum. Pellentesque lorem. Curabitur sit amet erat quis risus feugiat viverra. Pellentesque augue justo, sagittis et, lacinia at, venenatis non, arcu. Nunc nec libero. In cursus dictum risus. Etiam tristique nisl a</p>
+                                    <h4>Sample Lorem Ipsum Text</h4>
+                                    <p>Sed eget turpis a pede tempor malesuada. Vivamus quis mi at leo pulvinar hendrerit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque aliquet lacus vitae pede. Nullam mollis dolor ac nisi. Phasellus sit amet urna. Praesent pellentesque sapien sed lacus. Donec lacinia odio in odio. In sit amet elit. Maecenas gravida interdum urna. Integer pretium, arcu vitae imperdiet facilisis, elit tellus tempor nisi, vel feugiat ante velit sit amet mauris. Vivamus arcu. Integer pharetra magna ac lacus. Aliquam vitae sapien in nibh vehicula auctor. Suspendisse leo mauris, pulvinar sed, tempor et, consequat ac, lacus. Proin velit. Nulla semper lobortis mauris. Duis urna erat, ornare et, imperdiet eu, suscipit sit amet, massa. Nulla nulla nisi, pellentesque at, egestas quis, fringilla eu, diam.</p>
+                                </div>*@
 
                         </div>
                     </div>
@@ -376,64 +377,64 @@
         </div>
     </div>
     @*<footer>
-        <div class="container">
-            <div class="wrap-footer">
-                <div class="row">
-                    <div class="col-md-3 col-footer footer-1">
-                        <img src="images/logofooter.png" />
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div>
-                    <div class="col-md-3 col-footer footer-2">
-                        <div class="heading"><h4>Customer Service</h4></div>
-                        <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Delivery Information</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3 col-footer footer-3">
-                        <div class="heading"><h4>My Account</h4></div>
-                        <ul>
-                            <li><a href="#">My Account</a></li>
-                            <li><a href="#">Brands</a></li>
-                            <li><a href="#">Gift Vouchers</a></li>
-                            <li><a href="#">Specials</a></li>
-                            <li><a href="#">Site Map</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3 col-footer footer-4">
-                        <div class="heading"><h4>Contact Us</h4></div>
-                        <ul>
-                            <li><span class="glyphicon glyphicon-home"></span>California, United States 3000009</li>
-                            <li><span class="glyphicon glyphicon-earphone"></span>+91 8866888111</li>
-                            <li><span class="glyphicon glyphicon-envelope"></span>infor@yoursite.com</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        Your Store © 20xx - <a href="http://www.365bootstrap.com" rel="nofollow" target="_blank">Ecommerce Themes</a> Designed by <a href="http://www.365bootstrap.com" rel="nofollow" target="_blank">365BOOTSTRAP</a>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="pull-right">
+                <div class="wrap-footer">
+                    <div class="row">
+                        <div class="col-md-3 col-footer footer-1">
+                            <img src="images/logofooter.png" />
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                        <div class="col-md-3 col-footer footer-2">
+                            <div class="heading"><h4>Customer Service</h4></div>
                             <ul>
-                                <li><img src="images/visa-curved-32px.png" /></li>
-                                <li><img src="images/paypal-curved-32px.png" /></li>
-                                <li><img src="images/discover-curved-32px.png" /></li>
-                                <li><img src="images/maestro-curved-32px.png" /></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Delivery Information</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-footer footer-3">
+                            <div class="heading"><h4>My Account</h4></div>
+                            <ul>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Brands</a></li>
+                                <li><a href="#">Gift Vouchers</a></li>
+                                <li><a href="#">Specials</a></li>
+                                <li><a href="#">Site Map</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-footer footer-4">
+                            <div class="heading"><h4>Contact Us</h4></div>
+                            <ul>
+                                <li><span class="glyphicon glyphicon-home"></span>California, United States 3000009</li>
+                                <li><span class="glyphicon glyphicon-earphone"></span>+91 8866888111</li>
+                                <li><span class="glyphicon glyphicon-envelope"></span>infor@yoursite.com</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>*@
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            Your Store © 20xx - <a href="http://www.365bootstrap.com" rel="nofollow" target="_blank">Ecommerce Themes</a> Designed by <a href="http://www.365bootstrap.com" rel="nofollow" target="_blank">365BOOTSTRAP</a>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="pull-right">
+                                <ul>
+                                    <li><img src="images/visa-curved-32px.png" /></li>
+                                    <li><img src="images/paypal-curved-32px.png" /></li>
+                                    <li><img src="images/discover-curved-32px.png" /></li>
+                                    <li><img src="images/maestro-curved-32px.png" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>*@
 
     <!-- IMG-thumb -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -446,17 +447,17 @@
     </div><!-- /.modal -->
 
     <script>
-	$(document).ready(function(){
-		$(".nav-tabs a").click(function(){
-			$(this).tab('show');
-		});
-		$('.nav-tabs a').on('shown.bs.tab', function(event){
-			var x = $(event.target).text();         // active tab
-			var y = $(event.relatedTarget).text();  // previous tab
-			$(".act span").text(x);
-			$(".prev span").text(y);
-		});
-	});
+        $(document).ready(function () {
+            $(".nav-tabs a").click(function () {
+                $(this).tab('show');
+            });
+            $('.nav-tabs a').on('shown.bs.tab', function (event) {
+                var x = $(event.target).text();         // active tab
+                var y = $(event.relatedTarget).text();  // previous tab
+                $(".act span").text(x);
+                $(".prev span").text(y);
+            });
+        });
     </script>
 </body>
 </html>
@@ -588,4 +589,136 @@
 
 
 </html>
+<div id="dangkithuexe">
+    <html>
+    <head>
+        <title>Tab Sign In Form Responsive Widget Template | Home :: w3layouts</title>
+        <link href="~/Content/css/dangnhap.css" rel="stylesheet" type="text/css" media="all" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="Tab Sign In Form Responsive, Login form web template, Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+        <!--web-fonts-->
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    </head>
+    <link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+    <!--web-fonts-->
+    <script src="~/Content/js/dangnhap-1.js"></script>
+    <script src="~/Content/js/easyResponsiveTabs.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#horizontalTab').easyResponsiveTabs({
+                type: 'default', //Types: default, vertical, accordion
+                width: 'auto', //auto or any width like 600px
+                fit: true   // 100% fit in a container
+            });
+        });
+    </script>
+    <body>
+        <!---header--->
+
+        <div style="background-color:black " class="header">
+            <h1 style="color:white">Điền Thông Tin Người Thuê Xe</h1>
+
+        </div>
+        <!---header--->
+        <!---main--->
+        <div class="main-content-w3">
+            <div class="sap_tabs-w3agile">
+                <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+                    <div class="tab">
+                        <ul>
+                            <div style="clear:both;text-align:right,">
+                                <span id="dong" class="btn btn-danger">ĐÓNG</span>
+                            </div>
+                            <li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>Điền Thông Tin Người Thuê</span></li>
+
+                            @*<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Reset Password</span></li>*@
+                        </ul>
+                    </div>
+                    <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
+                        <p class="tab-text"></p>
+                        <div class="register ">
+                            <form action="#" method="post">
+                                <input placeholder="Họ Tên Người Thuê" name="Name" class="user" type="text" required="">
+                                <input placeholder="Địa Chỉ" name="diachi" class="mess" type="text" required="">
+                                <input placeholder="Số Điện Thoại" name="sodienthoai" class="sodienthoai" type="text" required="">
+                                @*<input placeholder="Ngày Sinh" name="ngaysinh" class="ngaysinh" type="date" required="" >*@@*date" name="date" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">*@
+                                <input id="date" name="date" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+                                <input placeholder="Số CMND" name="cmnd" class="cmnd" type="text" required="">
+
+
+                                <div class="sign-up">
+                                    <input type="submit" value="XÁC NHẬN THUÊ XE">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tab-2 resp-tab-content" aria-labelledby="tab_item-1">
+
+                        <h4 class="text-center"></h4>
+                        <div class="register">
+                            <form action="#" method="post">
+                                <input placeholder="Tên Tài Khoản" name="Email" class="user" type="text" required="">
+                                <input placeholder="Mật Khẩu" name="Password" class="pass" type="password" required="">
+
+                                <div class="sign-up">
+                                    <input type="submit" value="Đăng Nhập" />
+                                </div>
+                            </form>
+                            <h3><a href="#"></a></h3>
+                        </div>
+                    </div>
+                    <div class="tab-3 resp-tab-content" aria-labelledby="tab_item-2">
+                        <p class="tab-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor. reprehenderit</p>
+
+                        <div class="register">
+                            <form action="#" method="post">
+                                <input placeholder="Email" name="Email" class="user" type="text" required="">
+                                <h4 class="text-center1">OR</h4>
+                                <input placeholder="Phone" name="Phone" class="phone" type="text" required="">
+                                <div class="sign-up">
+                                    <input type="submit" value="Get New One !" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-w3l">
+            <p style=" font-weight:bold;color:black">DESIGN BY 44K21108</p>
+        </div>
+
+        <style>
+            #dangkithuexe {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,.5);
+                z-index: 99;
+                display: none;
+            }
+        </style>
+
+        <!---main--->
+    </body>
+</html>
+</div>
+<script type="text/javascript">
+    $("#btndangkithue").click(function () {
+        $("#dangkithuexe").show();
+    });
+
+    $("#dong").click(dongform);
+
+    //dinh nghia function dong'
+    function dongform() {
+        $("#dangkithuexe").hide();
+    }
+
+</script>
+
 
