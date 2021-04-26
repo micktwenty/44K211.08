@@ -28,16 +28,25 @@ namespace Booking_Motorbike_44K21108.Controllers
             var model = db.XEs.Find(id);
             return View(model);
         }
-
-
+      
+        [HttpGet]
         public ActionResult dangnhap()
         {
             return View();
         }
 
-        public ActionResult thongtinxe()
+        [HttpPost]
+        public ActionResult dangnhap(NHACUNGCAP tv)
         {
+            db.NHACUNGCAPs.Add(tv);
+            db.SaveChanges();
+
             return View();
+        }
+
+        public ActionResult LogIn()
+        {
+            return RedirectToAction("Index","Admin");
         }
      
 

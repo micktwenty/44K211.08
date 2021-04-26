@@ -177,7 +177,6 @@ C:\Users\Thien\Documents\GitHub\K211.08\Booking Motorbike 44K21108\bin\PagedList
 C:\Users\Thien\Documents\GitHub\K211.08\Booking Motorbike 44K21108\bin\PagedList.Mvc.dll
 C:\Users\Thien\Documents\GitHub\K211.08\Booking Motorbike 44K21108\bin\PagedList.xml
 C:\Users\Thien\Documents\GitHub\K211.08\Booking Motorbike 44K21108\bin\PagedList.Mvc.xml
-C:\Users\Thien\Documents\GitHub\K211.08\Booking Motorbike 44K21108\obj\Debug\Booking Motorbike 44K21108.csprojAssemblyReference.cache
 C:\Users\Admin\Documents\GitHub\44K211.08\44K211.08\Booking Motorbike 44K21108\bin\Booking Motorbike 44K21108.dll.config
 C:\Users\Admin\Documents\GitHub\44K211.08\44K211.08\Booking Motorbike 44K21108\bin\Booking Motorbike 44K21108.dll
 C:\Users\Admin\Documents\GitHub\44K211.08\44K211.08\Booking Motorbike 44K21108\bin\Booking Motorbike 44K21108.pdb
@@ -216,3 +215,4 @@ C:\Users\Admin\Documents\GitHub\44K211.08\44K211.08\Booking Motorbike 44K21108\o
 C:\Users\Admin\Documents\GitHub\44K211.08\44K211.08\Booking Motorbike 44K21108\obj\Debug\Booking Motorbike 44K21108.csproj.CopyComplete
 C:\Users\Admin\Documents\GitHub\44K211.08\44K211.08\Booking Motorbike 44K21108\obj\Debug\Booking Motorbike 44K21108.dll
 C:\Users\Admin\Documents\GitHub\44K211.08\44K211.08\Booking Motorbike 44K21108\obj\Debug\Booking Motorbike 44K21108.pdb
+C:\Users\Thien\Documents\GitHub\K211.08\Booking Motorbike 44K21108\obj\Debug\Booking Motorbike 44K21108.csprojAssemblyReference.cache
