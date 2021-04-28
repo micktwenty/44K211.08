@@ -65,7 +65,8 @@ h1 {
     margin: 0 auto;
     margin-top: 100px;
     padding: 15px;
-    background-color: #142C5C;
+    background-color: #34383b;
+    box-shadow: 7px 7px 7px #585757;
 }
 
 h3 {
@@ -75,10 +76,10 @@ h3 {
 }
 
 .login-form {
-    color: #fff;
+	color: #fff;
     padding: 10px;
-    position: relative;
-    background-color: #142C5C;
+	position: relative;
+    background-color: #34383b;
 }
 
 span {
@@ -105,7 +106,7 @@ input.describe {
 }
 
 #drop a {
-    background: #EEB401 url("../images/up.png") no-repeat 10px;
+    background: #0986A3 url("../images/up.png") no-repeat 10px;
     padding: 10px 15px 10px 30px;
     color: #fff;
     cursor: pointer;

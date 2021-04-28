@@ -203,13 +203,12 @@
     <Content Include="Content\css\style-dangnhap.css" />
     <Content Include="Content\css\style-thongtinxe.css" />
     <Content Include="Content\css\style.css" />
-    <Content Include="Content\images\HondaAirBlade.png" />
+    <Content Include="Content\images\Honda AirBlade.png" />
     <Content Include="Content\images\HondaFuture125F1.png" />
     <Content Include="Content\images\HondaLead.png" />
     <Content Include="Content\images\HondaWaveAlpha.png" />
     <Content Include="Content\images\HondaXr.png" />
     <Content Include="Content\images\logo.png" />
-    <Content Include="Content\images\Logo.svg" />
     <Content Include="Content\images\PiaggioLiberty.png" />
     <Content Include="Content\images\PiaggioMedley.png" />
     <Content Include="Content\images\PiaggioVespa.png" />
