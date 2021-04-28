@@ -4,17 +4,12 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="7c17d9f5a2a4409a842e79d7b8caaa08" Name="Diagram1">
-        <EntityTypeShape EntityType="BMModel.HOADON" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="BMModel.HOADON_CT" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="BMModel.KHACHHANG" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="BMModel.NHACUNGCAP" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="BMModel.User" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="BMModel.XE" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <AssociationConnector Association="BMModel.FK_HOADON" ManuallyRouted="false" />
-        <AssociationConnector Association="BMModel.FK_KHACHHANG" ManuallyRouted="false" />
-        <AssociationConnector Association="BMModel.FK_XE" ManuallyRouted="false" />
-        <AssociationConnector Association="BMModel.FK_NHACUNGCAP" ManuallyRouted="false" />
+      <Diagram DiagramId="83163c1d56634e0ea82ba5f77f0611e3" Name="Diagram1">
+        <EntityTypeShape EntityType="BMModel.HOADON" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BMModel.HOADON_CT" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BMModel.KHACHHANG" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BMModel.NHACUNGCAP" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BMModel.XE" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -42,14 +42,8 @@
     <Property Name="MaNCC" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="TenNCC" Type="nvarchar" MaxLength="150" Nullable="false" />
     <Property Name="DiaChi_NCC" Type="nvarchar" MaxLength="150" Nullable="false" />
-    <Property Name="SDT_NCC" Type="int" Nullable="false" />
-  </EntityType>
-  <EntityType Name="User">
-    <Key>
-      <PropertyRef Name="TaiKhoan" />
-    </Key>
-    <Property Name="TaiKhoan" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="MatKhau" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SDT_NCC" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="MatKhau" Type="varchar" MaxLength="20" Nullable="false" />
   </EntityType>
   <EntityType Name="XE">
     <Key>
@@ -65,76 +59,11 @@
     <Property Name="ThongTin" Type="nvarchar" MaxLength="500" />
     <Property Name="MaNCC" Type="varchar" MaxLength="50" Nullable="false" />
   </EntityType>
-  <Association Name="FK_HOADON">
-    <End Role="HOADON" Type="Self.HOADON" Multiplicity="1" />
-    <End Role="HOADON_CT" Type="Self.HOADON_CT" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="HOADON">
-        <PropertyRef Name="MaHD" />
-      </Principal>
-      <Dependent Role="HOADON_CT">
-        <PropertyRef Name="MaHD" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_KHACHHANG">
-    <End Role="KHACHHANG" Type="Self.KHACHHANG" Multiplicity="1" />
-    <End Role="HOADON" Type="Self.HOADON" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="KHACHHANG">
-        <PropertyRef Name="MaKH" />
-      </Principal>
-      <Dependent Role="HOADON">
-        <PropertyRef Name="MaKH" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_NHACUNGCAP">
-    <End Role="NHACUNGCAP" Type="Self.NHACUNGCAP" Multiplicity="1" />
-    <End Role="XE" Type="Self.XE" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="NHACUNGCAP">
-        <PropertyRef Name="MaNCC" />
-      </Principal>
-      <Dependent Role="XE">
-        <PropertyRef Name="MaNCC" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_XE">
-    <End Role="XE" Type="Self.XE" Multiplicity="1" />
-    <End Role="HOADON_CT" Type="Self.HOADON_CT" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="XE">
-        <PropertyRef Name="MaXe" />
-      </Principal>
-      <Dependent Role="HOADON_CT">
-        <PropertyRef Name="MaXe" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <EntityContainer Name="BMModelStoreContainer">
     <EntitySet Name="HOADON" EntityType="Self.HOADON" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="HOADON_CT" EntityType="Self.HOADON_CT" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="KHACHHANG" EntityType="Self.KHACHHANG" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="NHACUNGCAP" EntityType="Self.NHACUNGCAP" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="XE" EntityType="Self.XE" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="FK_HOADON" Association="Self.FK_HOADON">
-      <End Role="HOADON" EntitySet="HOADON" />
-      <End Role="HOADON_CT" EntitySet="HOADON_CT" />
-    </AssociationSet>
-    <AssociationSet Name="FK_KHACHHANG" Association="Self.FK_KHACHHANG">
-      <End Role="KHACHHANG" EntitySet="KHACHHANG" />
-      <End Role="HOADON" EntitySet="HOADON" />
-    </AssociationSet>
-    <AssociationSet Name="FK_NHACUNGCAP" Association="Self.FK_NHACUNGCAP">
-      <End Role="NHACUNGCAP" EntitySet="NHACUNGCAP" />
-      <End Role="XE" EntitySet="XE" />
-    </AssociationSet>
-    <AssociationSet Name="FK_XE" Association="Self.FK_XE">
-      <End Role="XE" EntitySet="XE" />
-      <End Role="HOADON_CT" EntitySet="HOADON_CT" />
-    </AssociationSet>
   </EntityContainer>
 </Schema>

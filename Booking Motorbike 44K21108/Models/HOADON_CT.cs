@@ -19,8 +19,5 @@ namespace Booking_Motorbike_44K21108.Models
         public string MaNCC { get; set; }
         public int Soluong { get; set; }
         public int ThanhTien { get; set; }
-    
-        public virtual HOADON HOADON { get; set; }
-        public virtual XE XE { get; set; }
     }
 }

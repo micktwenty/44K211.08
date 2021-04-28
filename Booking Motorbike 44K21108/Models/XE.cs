@@ -14,12 +14,6 @@ namespace Booking_Motorbike_44K21108.Models
     
     public partial class XE
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public XE()
-        {
-            this.HOADON_CT = new HashSet<HOADON_CT>();
-        }
-    
         public string MaXe { get; set; }
         public string LoaiXe { get; set; }
         public string TenXe { get; set; }
@@ -29,9 +23,5 @@ namespace Booking_Motorbike_44K21108.Models
         public string HinhAnh { get; set; }
         public string ThongTin { get; set; }
         public string MaNCC { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HOADON_CT> HOADON_CT { get; set; }
-        public virtual NHACUNGCAP NHACUNGCAP { get; set; }
     }
 }

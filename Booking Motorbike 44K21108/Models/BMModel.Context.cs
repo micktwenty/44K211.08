@@ -10,14 +10,13 @@
 namespace Booking_Motorbike_44K21108.Models
 {
     using System;
-    using System.Collections.Generic;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class BMEntities1 : DbContext
+    public partial class BMEntities2 : DbContext
     {
-        public BMEntities1()
-            : base("name=BMEntities1")
+        public BMEntities2()
+            : base("name=BMEntities2")
         {
         }
     
@@ -25,17 +24,11 @@ namespace Booking_Motorbike_44K21108.Models
         {
             throw new UnintentionalCodeFirstException();
         }
-
-        internal IEnumerable<T> Query<T>(string v, string a)
-        {
-            throw new NotImplementedException();
-        }
-
+    
         public virtual DbSet<HOADON> HOADONs { get; set; }
         public virtual DbSet<HOADON_CT> HOADON_CT { get; set; }
         public virtual DbSet<KHACHHANG> KHACHHANGs { get; set; }
         public virtual DbSet<NHACUNGCAP> NHACUNGCAPs { get; set; }
-        public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<XE> XEs { get; set; }
     }
 }

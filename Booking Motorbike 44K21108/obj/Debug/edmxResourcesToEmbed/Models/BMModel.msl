@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="BMModelStoreContainer" CdmEntityContainer="BMEntities1">
+  <EntityContainerMapping StorageEntityContainer="BMModelStoreContainer" CdmEntityContainer="BMEntities2">
     <EntitySetMapping Name="HOADONs">
       <EntityTypeMapping TypeName="BMModel.HOADON">
         <MappingFragment StoreEntitySet="HOADON">
@@ -45,13 +45,6 @@
           <ScalarProperty Name="TenNCC" ColumnName="TenNCC" />
           <ScalarProperty Name="DiaChi_NCC" ColumnName="DiaChi_NCC" />
           <ScalarProperty Name="SDT_NCC" ColumnName="SDT_NCC" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Users">
-      <EntityTypeMapping TypeName="BMModel.User">
-        <MappingFragment StoreEntitySet="User">
-          <ScalarProperty Name="TaiKhoan" ColumnName="TaiKhoan" />
           <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
         </MappingFragment>
       </EntityTypeMapping>

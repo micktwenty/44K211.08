@@ -14,20 +14,11 @@ namespace Booking_Motorbike_44K21108.Models
     
     public partial class KHACHHANG
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public KHACHHANG()
-        {
-            this.HOADONs = new HashSet<HOADON>();
-        }
-    
         public string MaKH { get; set; }
         public string TenKH { get; set; }
         public string DiaChi { get; set; }
         public string SDT { get; set; }
         public System.DateTime NgaySinh { get; set; }
         public int CMND { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HOADON> HOADONs { get; set; }
     }
 }

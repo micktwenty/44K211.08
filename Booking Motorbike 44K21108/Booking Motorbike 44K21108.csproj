@@ -175,9 +175,6 @@
       <DependentUpon>BMModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PetaPoco.cs" />
-    <Compile Include="Models\User.cs">
-      <DependentUpon>BMModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\XE.cs">
       <DependentUpon>BMModel.tt</DependentUpon>
     </Compile>
@@ -263,6 +260,12 @@
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Models\Generated\PetaPoco.Generator.ttinclude" />
+    <Content Include="Models\Generated\PetaPoco.Core.ttinclude" />
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\Views\Shared\Main_Layout.cshtml" />
+    <Content Include="Areas\Admin\Views\Admin\Index.cshtml" />
+    <Content Include="Areas\Content_Admin\variables.scss" />
     <EntityDeploy Include="Models\BMModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>BMModel.Designer.cs</LastGenOutput>
@@ -270,12 +273,6 @@
     <Content Include="Models\BMModel.edmx.diagram">
       <DependentUpon>BMModel.edmx</DependentUpon>
     </Content>
-    <Content Include="Models\Generated\PetaPoco.Generator.ttinclude" />
-    <Content Include="Models\Generated\PetaPoco.Core.ttinclude" />
-    <Content Include="Areas\Admin\Views\web.config" />
-    <Content Include="Areas\Admin\Views\Shared\Main_Layout.cshtml" />
-    <Content Include="Areas\Admin\Views\Admin\Index.cshtml" />
-    <Content Include="Areas\Content_Admin\variables.scss" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

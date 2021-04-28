@@ -49,18 +49,40 @@
                 <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
                     <p class="tab-text"></p>
                     <div class="register ">
-                        <form action="#" method="post">
-                            <input placeholder="Tên Nhà Cung Cấp" name="Name" class="user" type="text" required="">
-                            <input placeholder="Tên Tài Khoản" name="Email" class="mess" type="text" required="">
-                            <input placeholder="Mật Khẩu" name="Password" class="pass" type="password" required="">
-                            <input placeholder="Số Điện Thoại" name="sodienthoai" class="sodienthoai" type="text" required="">
-                            <input placeholder="Địa chỉ" name="diachi" class="diachi" type="text" required="">
+                        
+                            @using (Html.BeginForm())
+                            {
+                        <div class="register-top-grid">
 
 
-                            <div class="sign-up">
-                                <input type="submit" value="Đăng Ký">
-                            </div>
-                        </form>
+                            <span style="text-align:center">Tài khoản</span>
+                            @Html.TextBox("MaNCC")
+
+
+                            <span style="text-align:center">Mật Khẩu</span>
+                            @Html.Password("MatKhau")
+
+
+                            <span style="text-align:center">Tên nhà cung cấp</span>
+                            @Html.TextBox("TenNCC")
+
+                            <span style="text-align:center">Địa chỉ</span>
+                            @Html.TextBox("DiaChi_NCC")
+
+
+                            <span style="text-align:center">Số điện thoại</span>
+                            @Html.TextBox("SDT_NCC")
+
+
+
+
+                        </div>
+
+
+                        <div class="sign-up">
+                            <input type="submit" value="Đăng Ký">
+                        </div>
+                            }
                     </div>
                 </div>
                 @*<div class="tab-2 resp-tab-content" aria-labelledby="tab_item-1">

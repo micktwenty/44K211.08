@@ -10,7 +10,7 @@ namespace Booking_Motorbike_44K21108.Controllers
 {
     public class HomeController : Controller
     {
-        BMEntities1 db = new BMEntities1();
+        BMEntities2 db = new BMEntities2();
         // GET: Home
         public ActionResult Index()
         {
@@ -37,6 +37,9 @@ namespace Booking_Motorbike_44K21108.Controllers
         [HttpPost]
         public ActionResult dangnhap(NHACUNGCAP tv)
         {
+            db.NHACUNGCAPs.Add(tv);
+            db.SaveChanges();
+
             return View();
         }
 
