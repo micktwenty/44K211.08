@@ -5,6 +5,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Booking_Motorbike_44K21108.Models;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace Booking_Motorbike_44K21108.Controllers
 {
@@ -35,12 +37,83 @@ namespace Booking_Motorbike_44K21108.Controllers
             return View();
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult dangnhap(NHACUNGCAP tv)
         {
+            
+                //var check = db.NHACUNGCAPs.FirstOrDefault(s => s.TenNCC == tv.TenNCC);
+                //if (check == null)
+                //{
+            tv.MatKhau = GetMD5(tv.MatKhau);
+           
+            db.Configuration.ValidateOnSaveEnabled = false;
             db.NHACUNGCAPs.Add(tv);
             db.SaveChanges();
+            return RedirectToAction("Index");
+                //}
+                //else
+                //{
+                //    ViewBag.error = "Tên tài khoản đã tồn tại!";
+                //    return View();
+                //}
 
+           
+            //db.NHACUNGCAPs.Add(tv);
+            //db.SaveChanges();
+
+            //return View();
+        }
+        public static string GetMD5(string str)
+        {
+            MD5 md5 = new MD5CryptoServiceProvider();
+            byte[] fromData = Encoding.UTF8.GetBytes(str);
+            byte[] targetData = md5.ComputeHash(fromData);
+            string byte2String = null;
+
+            for (int i = 0; i < targetData.Length; i++)
+            {
+                byte2String += targetData[i].ToString("x2");
+
+            }
+            return byte2String;
+        }
+
+        public ActionResult Login()
+        {
             return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Login(string MaNCC, string MatKhau)
+        {
+            if (ModelState.IsValid)
+            {
+
+
+                var f_password = GetMD5(MatKhau);
+                var data = db.NHACUNGCAPs.Where(s => s.MaNCC.Equals(MaNCC) && s.MatKhau.Equals(f_password)).ToList();
+                if (data.Count() > 0)
+                {
+                    //add session
+                    Session["TenNCC"] = data.FirstOrDefault().TenNCC;
+                    Session["SDT_NCC"] = data.FirstOrDefault().SDT_NCC;
+                    Session["MaNCC"] = data.FirstOrDefault().MaNCC;
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    ViewBag.error = "Login failed";
+                    return RedirectToAction("Login");
+                }
+            }
+            return View();
+        }
+        //Logout
+        public ActionResult Logout()
+        {
+            Session.Clear();//remove session
+            return RedirectToAction("Login");
         }
 
         public ActionResult thongtinxe()

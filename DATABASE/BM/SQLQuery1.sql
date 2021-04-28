@@ -1,5 +1,7 @@
 ﻿Create Database BM
 go
+use BM
+go
 
 Create table KHACHHANG
 (
@@ -17,7 +19,7 @@ Create table NHACUNGCAP
   TenNCC nvarchar(150) not null,
   DiaChi_NCC Nvarchar(150) not null,
   SDT_NCC varchar(10) not null,
-  MatKhau varchar(20)not null
+  MatKhau varchar(1000)not null
 )
 
 Create table XE
@@ -75,3 +77,4 @@ VALUES	('MX0001', 'Honda', 'Vision', '43D1-25554', 150,1,'HondaVision.png','NCC0
 		('MX0006', 'Honda', 'Lead', '43D1-102357', 180,0,'HondaLead.png','NCC002')
 INSERT INTO NHACUNGCAP
 VALUES	('NCC001', N'Cửa hàng thuê xe Tân Cương', '34 Nguyễn Công Trứ-Sơn Trà','0123584692','123')
+
