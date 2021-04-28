@@ -1,4 +1,8 @@
-﻿
+﻿@using Booking_Motorbike_44K21108.Models
+@model NHACUNGCAP
+
+
+@*@model NHACUNGCAP*@
 @{
     ViewBag.Title = "dangnhap";
     Layout = "~/Views/Layout/HomePage.cshtml";
@@ -15,6 +19,7 @@
     <meta name="keywords" content="Tab Sign In Form Responsive, Login form web template, Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
     <!--web-fonts-->
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
 </head>
 <link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
 <!--web-fonts-->
@@ -41,39 +46,75 @@
             <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
                 <div class="tab">
                     <ul>
-                        <li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>ĐĂNG KÝ</span></li>
-                        <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>ĐĂNG NHẬP</span></li>
+                        <li class="resp-tab-item" ><span>ĐĂNG KÝ</span></li>
+                        @*<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>ĐĂNG NHẬP</span></li>*@
                         @*<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Reset Password</span></li>*@
                     </ul>
                 </div>
                 <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
                     <p class="tab-text"></p>
                     <div class="register ">
-                        <form action="#" method="post">
-                            <input placeholder="Tên Nhà Cung Cấp" name="Name" class="user" type="text" required="">
-                            <input placeholder="Tên Tài Khoản" name="Email" class="mess" type="text" required="">
-                            <input placeholder="Mật Khẩu" name="Password" class="pass" type="password" required="">
-                            <input placeholder="Số Điện Thoại" name="sodienthoai" class="sodienthoai" type="text" required="">
-                            <input placeholder="Địa chỉ" name="diachi" class="diachi" type="text" required="">
+
+                        @using (Html.BeginForm())
+                        {
+                            <div class="register-top-grid">
 
 
+                                <span style="text-align:center">Tài khoản</span>
+                                @Html.TextBox("MaNCC")
+
+
+                                <span style="text-align:center">Mật Khẩu</span>
+                                @Html.Password("MatKhau")
+
+
+                                <span style="text-align:center">Tên nhà cung cấp</span>
+                                @Html.TextBox("TenNCC")
+
+                                <span style="text-align:center">Địa chỉ</span>
+                                @Html.TextBox("DiaChi_NCC")
+
+
+                                <span style="text-align:center">Số điện thoại</span>
+                                @Html.TextBox("SDT_NCC")
+
+
+
+
+                            </div>
                             <div class="sign-up">
                                 <input type="submit" value="Đăng Ký">
                             </div>
-                        </form>
+
+                        }
+
+
+                        @*<input placeholder="Tên Nhà Cung Cấp" name="Name" class="user" type="text" required="">
+        <input placeholder="Tên Tài Khoản" name="Email" class="mess" type="text" required="">
+        <input placeholder="Mật Khẩu" name="Password" class="pass" type="password" required="">
+        <input placeholder="Số Điện Thoại" name="sodienthoai" class="sodienthoai" type="text" required="">
+        <input placeholder="Địa chỉ" name="diachi" class="diachi" type="text" required="">*@
+
+
+
+
                     </div>
                 </div>
                 <div class="tab-2 resp-tab-content" aria-labelledby="tab_item-1">
                     
                     <h4 class="text-center"></h4>
-                    <div class="register">
+                    <div class="form-info">
                         <form action="#" method="post">
-                            <input placeholder="Tên Tài Khoản" name="Email" class="user" type="text" required="">
-                            <input placeholder="Mật Khẩu" name="Password" class="pass" type="password" required="">
-                            
-                            <div class="sign-up">
-                                <input type="submit" value="Đăng Nhập" />
-                            </div>
+                            @using (Html.BeginForm("LogIn","Home"))
+                            {
+                                <input placeholder="Tên Tài Khoản" name="Email" class="user" type="text" required="">
+                                <input placeholder="Mật Khẩu" name="Password" class="pass" type="password" required="">
+
+                                <div class="sign-up">
+                                    <input type="submit" value="Đăng Nhập" />
+                                </div>
+                            }
+
                         </form>
                         <h3><a href="#"></a></h3>
                     </div>
