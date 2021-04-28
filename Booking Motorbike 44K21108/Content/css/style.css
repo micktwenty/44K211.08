@@ -4,8 +4,8 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
-body{
-	background:#fff;
+body {
+	background: #fff;
 	font-family: 'Roboto', sans-serif;
 }
  a{
@@ -529,8 +529,8 @@ height: 35px;
 	
 /*--//content--*/
 /*--footer--*/
-.footer{
-	background:#141414;
+.footer {
+	background: #EEB401;
 }
 .amet-sed h4{
 	font-size: 1.5em;
@@ -548,7 +548,7 @@ height: 35px;
 }
 ul.nav-bottom li  a{
 	text-decoration:none;
-	color:#989696;
+	color:#fff;
 	font-size:1.1em;
 	display: inline-block;
 	  margin: 0.2em 0;
@@ -557,7 +557,7 @@ ul.nav-bottom li  a:hover{
 	color:#EF5F21;
 }
 .amet-sed p{
-	color:#989696;
+	color:#fff;
 	font-size: 1.2em;
 	  margin: 0 0 0.3em;
 }
@@ -591,14 +591,14 @@ padding:1em 0 0;
   background: #fff;
   border: none;
  }
- .amet-sed input[type="submit"] {
-  width: 20%;
-  color: #FFF;
-  font-size: 1em;
-  background:#EF5F21;
-  border: none;
-  outline:none;
-  padding: 0.5em;
+.amet-sed input[type="submit"] {
+	width: 20%;
+	color: #FFF;
+	font-size: 1em;
+	background: #142C5C;
+	border: none;
+	outline: none;
+	padding: 0.5em;
 }
 .amet-sed input[type="submit"]:hover {
 background: #fff;
@@ -683,7 +683,7 @@ ul.social li i:hover{
 	-webkit-appearance: none;
 }
 .send input[type="submit"]:hover{
-	background:#2d2d2d;
+	background:#fff;
 }
 .contact-form {
 	padding: 3em 0;

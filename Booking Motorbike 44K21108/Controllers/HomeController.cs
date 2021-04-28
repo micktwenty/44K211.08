@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -28,9 +29,13 @@ namespace Booking_Motorbike_44K21108.Controllers
             var model = db.XEs.Find(id);
             return View(model);
         }
-
-
+        [HttpGet]
         public ActionResult dangnhap()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult dangnhap(NHACUNGCAP tv)
         {
             return View();
         }
@@ -39,7 +44,6 @@ namespace Booking_Motorbike_44K21108.Controllers
         {
             return View();
         }
-     
 
     }
 }
