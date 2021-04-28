@@ -177,7 +177,6 @@ C:\Users\Thien\Documents\GitHub\K211.08\Booking Motorbike 44K21108\bin\PagedList
 C:\Users\Thien\Documents\GitHub\K211.08\Booking Motorbike 44K21108\bin\PagedList.Mvc.dll
 C:\Users\Thien\Documents\GitHub\K211.08\Booking Motorbike 44K21108\bin\PagedList.xml
 C:\Users\Thien\Documents\GitHub\K211.08\Booking Motorbike 44K21108\bin\PagedList.Mvc.xml
-C:\Users\Thien\Documents\GitHub\K211.08\Booking Motorbike 44K21108\obj\Debug\Booking Motorbike 44K21108.csprojAssemblyReference.cache
 C:\Users\Admin\Documents\GitHub\44K211.08\44K211.08\Booking Motorbike 44K21108\bin\Booking Motorbike 44K21108.dll.config
 C:\Users\Admin\Documents\GitHub\44K211.08\44K211.08\Booking Motorbike 44K21108\bin\Booking Motorbike 44K21108.dll
 C:\Users\Admin\Documents\GitHub\44K211.08\44K211.08\Booking Motorbike 44K21108\bin\Booking Motorbike 44K21108.pdb
@@ -216,7 +215,7 @@ C:\Users\Admin\Documents\GitHub\44K211.08\44K211.08\Booking Motorbike 44K21108\o
 C:\Users\Admin\Documents\GitHub\44K211.08\44K211.08\Booking Motorbike 44K21108\obj\Debug\Booking Motorbike 44K21108.csproj.CopyComplete
 C:\Users\Admin\Documents\GitHub\44K211.08\44K211.08\Booking Motorbike 44K21108\obj\Debug\Booking Motorbike 44K21108.dll
 C:\Users\Admin\Documents\GitHub\44K211.08\44K211.08\Booking Motorbike 44K21108\obj\Debug\Booking Motorbike 44K21108.pdb
-<<<<<<< HEAD
+C:\Users\Thien\Documents\GitHub\K211.08\Booking Motorbike 44K21108\obj\Debug\Booking Motorbike 44K21108.csprojAssemblyReference.cache
 C:\Users\Admin\Documents\GitHub\44K211.08\44K211.08\Booking Motorbike 44K21108\bin\roslyn\csc.exe
 C:\Users\Admin\Documents\GitHub\44K211.08\44K211.08\Booking Motorbike 44K21108\bin\roslyn\csc.exe.config
 C:\Users\Admin\Documents\GitHub\44K211.08\44K211.08\Booking Motorbike 44K21108\bin\roslyn\csc.rsp
@@ -243,6 +242,7 @@ C:\Users\Admin\Documents\GitHub\44K211.08\44K211.08\Booking Motorbike 44K21108\b
 C:\Users\Admin\Documents\GitHub\44K211.08\44K211.08\Booking Motorbike 44K21108\bin\roslyn\vbc.rsp
 C:\Users\Admin\Documents\GitHub\44K211.08\44K211.08\Booking Motorbike 44K21108\bin\roslyn\VBCSCompiler.exe
 C:\Users\Admin\Documents\GitHub\44K211.08\44K211.08\Booking Motorbike 44K21108\bin\roslyn\VBCSCompiler.exe.config
+<<<<<<< HEAD
 =======
 D:\Github\44K211.08\44K211.08\Booking Motorbike 44K21108\bin\PagedList.dll
 D:\Github\44K211.08\44K211.08\Booking Motorbike 44K21108\bin\PagedList.Mvc.dll
@@ -313,3 +313,5 @@ C:\Users\Admin\Desktop\44K211.08\Booking Motorbike 44K21108\obj\Debug\Booking Mo
 C:\Users\Admin\Desktop\44K211.08\Booking Motorbike 44K21108\obj\Debug\Booking Motorbike 44K21108.csproj.CopyComplete
 C:\Users\Admin\Desktop\44K211.08\Booking Motorbike 44K21108\obj\Debug\Booking Motorbike 44K21108.dll
 C:\Users\Admin\Desktop\44K211.08\Booking Motorbike 44K21108\obj\Debug\Booking Motorbike 44K21108.pdb
+=======
+>>>>>>> 7b00d2df4daddba3c67ec0a197cbc3dfc06da0b2
