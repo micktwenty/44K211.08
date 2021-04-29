@@ -13,6 +13,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Free Bootstrap Themes by 365Bootstrap dot com - Free Responsive Html5 Templates">
     <meta name="author" content="http://www.365bootstrap.com">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Datepicker - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#datepicker").datepicker();
+        });
+    </script>
 
     <title>Mobile Shop | Free Bootstrap Themes by 365bootstrap.com</title>
 
@@ -639,20 +651,64 @@
                     <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
                         <p class="tab-text"></p>
                         <div class="register ">
-                            <form action="#" method="post">
-                                <input placeholder="Họ Tên Người Thuê" name="Name" class="user" type="text" required="">
-                                <input placeholder="Địa Chỉ" name="diachi" class="mess" type="text" required="">
-                                <input placeholder="Số Điện Thoại" name="sodienthoai" class="sodienthoai" type="text" required="">
-                                @*<input placeholder="Ngày Sinh" name="ngaysinh" class="ngaysinh" type="date" required="" >*@@*date" name="date" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">*@
-                                <input id="date" name="date" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
-                                <input placeholder="Số CMND" name="cmnd" class="cmnd" type="text" required="">
+
+                            @using (Html.BeginForm())
+                            {
+                                @Html.AntiForgeryToken()
+
+                            <div class="register-top-grid">
+
+
+                                <span style="text-align:center">Họ và tên</span>
+                                @Html.TextBox("TenKH")
+
+
+                                <span style="text-align:center">Ngày sinh</span>
+                                @Html.TextBox("NgaySinh")
+
+
+                                <span style="text-align:center">CMND/CCCD</span>
+                                @Html.TextBox("CMND")
+
+                                <span style="text-align:center">Địa chỉ</span>
+                                @Html.TextBox("DiaChi")
+
+
+                                <span style="text-align:center">Số điện thoại</span>
+                                @Html.TextBox("SDT")
+
+
+                                <span style="text-align:center">Ngày thuê</span>
+                                @Html.TextBox("NgayBD")
+
+
+                                <span style="text-align:center">Ngày trả</span>
+                                @Html.TextBox("NgayKT")
+
+
+                            </div>
 
 
                                 <div class="sign-up">
-                                    <input type="submit" value="XÁC NHẬN THUÊ XE">
+                                    <input type="submit" value="Đăng Ký">
                                 </div>
-                            </form>
+                            }
                         </div>
+                        <!--<div class="register ">
+        <form action="#" method="post">
+            <input placeholder="Họ Tên Người Thuê" name="Name" class="user" type="text" required="">
+            <input placeholder="Địa Chỉ" name="diachi" class="mess" type="text" required="">
+            <input placeholder="Số Điện Thoại" name="sodienthoai" class="sodienthoai" type="text" required="">-->
+                        @*<input placeholder="Ngày Sinh" name="ngaysinh" class="ngaysinh" type="date" required="" >*@@*date" name="date" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">*@
+                        <!--<input id="date" name="date" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+            <input placeholder="Số CMND" name="cmnd" class="cmnd" type="text" required="">
+
+
+            <div class="sign-up">
+                <input type="submit" value="XÁC NHẬN THUÊ XE">
+            </div>
+        </form>
+    </div>-->
                     </div>
                     <div class="tab-2 resp-tab-content" aria-labelledby="tab_item-1">
 
