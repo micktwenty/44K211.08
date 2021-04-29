@@ -56,11 +56,7 @@ create table HOADON_CT
 	ThanhTien int not null,
 	primary key (MaHD, MaXe)
 )
-create table [User]
-(
-	TaiKhoan varchar(50) primary key not null,
-	MatKhau varchar(50) not null
-)
+go
 INSERT INTO KHACHHANG
 VALUES	('KH0001', N'Nguyễn Quốc Thiện', N'147 Phan Thanh-Thanh Khê',0366489257,'2000-05-24',197405367),
 		('KH0002', N'Nguyễn Thị Thúy', N'23 Hoàng DIệu-Thanh Khê',0935877152,'2000-01-04',197401977),
