@@ -12,7 +12,7 @@ namespace Booking_Motorbike_44K21108.Controllers
 {
     public class HomeController : Controller
     {
-        BMEntities2 db = new BMEntities2();
+        BMEntities3 db = new BMEntities3();
         // GET: Home
         public ActionResult Index()
         {
@@ -109,7 +109,26 @@ namespace Booking_Motorbike_44K21108.Controllers
             }
             return View();
         }
-        //Logout
+        [HttpGet]
+        public ActionResult DKT()
+        {
+            return View();
+        }
+  
+        [HttpPost]
+        public ActionResult DKT(THUEXE tx)
+        {
+            var check = db.KHACHHANGs.FirstOrDefault(s => s.SDT == tx.SDT);
+            if (check == null)
+            {
+
+            }
+            else
+            {
+
+            }
+            return View();
+        }
         public ActionResult Logout()
         {
             Session.Clear();//remove session

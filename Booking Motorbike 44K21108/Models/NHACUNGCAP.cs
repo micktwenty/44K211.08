@@ -14,10 +14,19 @@ namespace Booking_Motorbike_44K21108.Models
     
     public partial class NHACUNGCAP
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public NHACUNGCAP()
+        {
+            this.XEs = new HashSet<XE>();
+        }
+    
         public string MaNCC { get; set; }
         public string TenNCC { get; set; }
         public string DiaChi_NCC { get; set; }
         public string SDT_NCC { get; set; }
         public string MatKhau { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<XE> XEs { get; set; }
     }
 }

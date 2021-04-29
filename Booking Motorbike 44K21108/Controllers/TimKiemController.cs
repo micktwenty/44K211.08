@@ -10,7 +10,7 @@ namespace Booking_Motorbike_44K21108.Controllers
 {
     public class TimKiemController : Controller
     {
-        BMEntities2 db = new BMEntities2();
+        BMEntities3 db = new BMEntities3();
         
 
         [HttpGet]

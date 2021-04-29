@@ -140,6 +140,21 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\BM.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BM.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BM.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BM.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\BMModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -155,6 +170,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BMModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\FEEDBACK.cs">
+      <DependentUpon>BM.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Generated\Database.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -167,14 +185,20 @@
       <DependentUpon>BMModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\KHACHHANG.cs">
-      <DependentUpon>BMModel.tt</DependentUpon>
+      <DependentUpon>BM.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\NHACUNGCAP.cs">
-      <DependentUpon>BMModel.tt</DependentUpon>
+      <DependentUpon>BM.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PetaPoco.cs" />
+    <Compile Include="Models\sysdiagram.cs">
+      <DependentUpon>BM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\THUEXE.cs">
+      <DependentUpon>BM.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\XE.cs">
-      <DependentUpon>BMModel.tt</DependentUpon>
+      <DependentUpon>BM.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -238,6 +262,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\BM.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BM.edmx</DependentUpon>
+      <LastGenOutput>BM.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\BM.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BM.edmx</DependentUpon>
+      <LastGenOutput>BM.cs</LastGenOutput>
+    </Content>
     <Content Include="Models\BMModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>BMModel.edmx</DependentUpon>
@@ -262,6 +296,13 @@
     </EntityDeploy>
     <Content Include="Models\BMModel.edmx.diagram">
       <DependentUpon>BMModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\BM.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BM.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\BM.edmx.diagram">
+      <DependentUpon>BM.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -296,6 +337,7 @@
     <Content Include="Views\Home\thongtinxe.cshtml" />
     <Content Include="Views\TimKiem\KQTimKiem.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Home\DKT.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\" />

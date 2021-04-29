@@ -12,26 +12,22 @@ namespace Booking_Motorbike_44K21108.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class XE
+    public partial class THUEXE
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public XE()
+        public THUEXE()
         {
             this.FEEDBACKs = new HashSet<FEEDBACK>();
         }
     
-        public string MaXe { get; set; }
-        public string LoaiXe { get; set; }
-        public string TenXe { get; set; }
-        public string BienSo { get; set; }
-        public int GiaXe { get; set; }
-        public bool TrangThai { get; set; }
-        public string HinhAnh { get; set; }
-        public string ThongTin { get; set; }
-        public string MaNCC { get; set; }
+        public string MaHD { get; set; }
+        public string SDT { get; set; }
+        public System.DateTime NgayDangKi { get; set; }
+        public System.DateTime NgayBD { get; set; }
+        public Nullable<System.DateTime> NgayKT { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<FEEDBACK> FEEDBACKs { get; set; }
-        public virtual NHACUNGCAP NHACUNGCAP { get; set; }
+        public virtual KHACHHANG KHACHHANG { get; set; }
     }
 }

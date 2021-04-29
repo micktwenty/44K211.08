@@ -217,7 +217,7 @@
                                 <div class="price"><b>Giá thuê: <span>@Model.GiaXe</span>/ngày</b> </div>
 
 
-                                <input type="button" value="Đăng kí thuê" id="btndangkithue" class="btn btn-primary" />
+                                <li style="font-weight:bold"><a href="@Url.Action("../Home/DKT")">Đăng ký thuê</a></li>
 
                             </div>
                         </div>
@@ -629,10 +629,10 @@
     <body>
         <!---header--->
 
-        <div style="background-color:black " class="header">
+        @*<div style="background-color:black " class="header">
             <h1 style="color:white">Điền Thông Tin Người Thuê Xe</h1>
 
-        </div>
+        </div>*@
         <!---header--->
         <!---main--->
         <div class="main-content-w3">
@@ -642,6 +642,10 @@
                         <ul>
                             <div style="clear:both;text-align:right,">
                                 <span id="dong" class="btn btn-danger">ĐÓNG</span>
+
+                                <div class="sign-up">
+                                    <input type="submit" value="Đăng Ký">
+                                </div>
                             </div>
                             <li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>Điền Thông Tin Người Thuê</span></li>
 
@@ -650,7 +654,7 @@
                     </div>
                     <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
                         <p class="tab-text"></p>
-                        <div class="register ">
+                        <div style="width:auto" class="register ">
 
                             @using (Html.BeginForm())
                             {
@@ -659,39 +663,25 @@
                             <div class="register-top-grid">
 
 
-                                <span style="text-align:center">Họ và tên</span>
+                                <span style="text-align:center" >Họ và tên</span>
                                 @Html.TextBox("TenKH")
-
-
                                 <span style="text-align:center">Ngày sinh</span>
                                 @Html.TextBox("NgaySinh")
-
-
                                 <span style="text-align:center">CMND/CCCD</span>
                                 @Html.TextBox("CMND")
-
                                 <span style="text-align:center">Địa chỉ</span>
                                 @Html.TextBox("DiaChi")
-
-
                                 <span style="text-align:center">Số điện thoại</span>
                                 @Html.TextBox("SDT")
-
-
                                 <span style="text-align:center">Ngày thuê</span>
                                 @Html.TextBox("NgayBD")
-
-
-                                <span style="text-align:center">Ngày trả</span>
-                                @Html.TextBox("NgayKT")
+                                @*<span style="text-align:center">Ngày trả</span>
+                                @Html.TextBox("NgayKT")*@
 
 
                             </div>
 
 
-                                <div class="sign-up">
-                                    <input type="submit" value="Đăng Ký">
-                                </div>
                             }
                         </div>
                         <!--<div class="register ">
