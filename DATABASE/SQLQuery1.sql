@@ -101,12 +101,12 @@ VALUES	('0398745212', N'Nguyễn Quốc Thiện', N'147 Phan Thanh-Thanh Khê','
 
 INSERT INTO NHACUNGCAP
 VALUES	('NCC001', N'Cửa hàng thuê xe máy Tân Cương', '34 Nguyễn Công Trứ-Sơn Trà-Đà Nẵng','0123584692','123'),
-        ('NCC001', N'Cửa hàng thuê xe máy Anh Khoa', '84 Phan Chu Trinh-Hội An-Quảng Nam','0935439306','123'),
-		('NCC001', N'Cửa hàng thuê xe máy Hidibike', '24/11 Lý Thường Kiệt-Huế','0945418111','123'),
-		('NCC001', N'Cửa hàng thuê xe máy Gia Huy', '126/6 Trần Cao Vân-Thanh Khê-Đà Nẵng','0903529586','123'),
-		('NCC001', N'Cửa hàng thuê xe máy Bảo Tín', '70 Lê Hữu Trác- Đà Nẵng','0914039300','123'),
-		('NCC001', N'Cửa hàng thuê xe máy Minh Đồng', '111 Lý Thái Tổ-Hội An-Quảng Nam','0785854252','123'),
-		('NCC001', N'Dịch vụ thuê xe máy Hạnh Thảo','29c/103 Nhật Lệ-Huế','0985005113','123')	
+        ('NCC002', N'Cửa hàng thuê xe máy Anh Khoa', '84 Phan Chu Trinh-Hội An-Quảng Nam','0935439306','123'),
+		('NCC003', N'Cửa hàng thuê xe máy Hidibike', '24/11 Lý Thường Kiệt-Huế','0945418111','123'),
+		('NCC004', N'Cửa hàng thuê xe máy Gia Huy', '126/6 Trần Cao Vân-Thanh Khê-Đà Nẵng','0903529586','123'),
+		('NCC005', N'Cửa hàng thuê xe máy Bảo Tín', '70 Lê Hữu Trác- Đà Nẵng','0914039300','123'),
+		('NCC006', N'Cửa hàng thuê xe máy Minh Đồng', '111 Lý Thái Tổ-Hội An-Quảng Nam','0785854252','123'),
+		('NCC007', N'Dịch vụ thuê xe máy Hạnh Thảo','29c/103 Nhật Lệ-Huế','0985005113','123')	
 
 INSERT INTO XE(MaXe, LoaiXe, TenXe, BienSo, GiaXe, TrangThai,HinhAnh, MaNCC)
 VALUES	
@@ -188,6 +188,38 @@ VALUES
 		('MX0082', 'Honda', 'AirBlade', '75D1-4100', 180,0,'HondaAirBlade.png','NCC001'),
 		('MX0083', 'Honda', 'SH', '75C1-03019', 180,0,'HondaSH.png','NCC001'),
 		('MX0084', 'Honda', 'Future', '75C1-12530', 110,0,'HondaFuture.png','NCC001')
+--Thêm bản ghi mới vào bảng Thuê xe
+Create proc pDangKiThueXe( @MaHD varchar(50),
+						   @SDT varchar(10),
+						   @NgayDangKi date,
+						   @NgayBD date,
+						   @NgayKT date,
+						   @ret bit out )
+as
+begin
+	declare @new_MaHD varchar(50)
+--Kiểm tra thời gian giao dịch có hợp lệ không? Nếu không, ngừng xử lý
+if @NgayBD > GETDATE()
+begin
+	set @ret = 0
+	return
+end
+--Tính Mã HĐ mới
+set @MaHD = (Select top 1 MaHD from THUEXE
+				order by MaHD desc)
+set @new_MaHD = (Select max(MaHD) + 1 from THUEXE)
+--Thêm mới bản ghi vào bảng thuê xe
+Insert into THUEXE(MaHD, NgayDangKi, NgayBD, NgayKT) values(@new_MaHD,@NgayDangKi,@NgayBD,@NgayKT)
+if @@ROWCOUNT <=0
+begin
+	set @ret = 0
+	return
+end
+end
+
+
+
+--Thêm bản ghi vào bảng khách hàng
 
 
 	
