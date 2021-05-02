@@ -207,7 +207,7 @@ end
 --Tính Mã HĐ mới
 set @MaHD = (Select top 1 MaHD from THUEXE
 				order by MaHD desc)
-set @new_MaHD = (Select max(MaHD) + 1 from THUEXE)
+set @new_MaHD = 'HD' + SUBSTRING(@MaHD,3,4)
 --Thêm mới bản ghi vào bảng thuê xe
 Insert into THUEXE(MaHD, NgayDangKi, NgayBD, NgayKT) values(@new_MaHD,@NgayDangKi,@NgayBD,@NgayKT)
 if @@ROWCOUNT <=0
@@ -220,7 +220,6 @@ end
 
 
 --Thêm bản ghi vào bảng khách hàng
-
 
 	
 			
