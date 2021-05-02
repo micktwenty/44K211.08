@@ -79,7 +79,7 @@ VALUES	('0398745212', N'Nguyễn Quốc Thiện', N'147 Phan Thanh-Thanh Khê','
 		('0378225633', N'Trương Quốc Nam', N'45 Phạm Nhữ Tăng-Thanh Khê','1999-05-12',194852257),
 		('0369255544', N'Trần Thị Ngọc Trâm', N'25/23 Phạm Cự Lượng- Sơn Trà','1993-12-04',194852367),
 		('0935668245', N'Nguyễn Văn Vũ', N'452 Nguyễn Tất Thành- Liên Chiểu','1990-2-25',199952367),
-		('01256852452', N'Trương Thị Hồng', N'145 Phan Chu Trinh-Thanh Khê','1987-09-22',194823367),
+		('0125685245', N'Trương Thị Hồng', N'145 Phan Chu Trinh-Thanh Khê','1987-09-22',194823367),
 		('0345892521', N'Trần Thị Ngọc Linh', N'45/2 Phan Thanh-Thanh Khê','1972-03-02',182423568),
 		('037562586', N'Nguyễn Thị Như', N'25 Phan Hành Sơn- Ngũ Hành Sơn','1992-02-12',197002152),
 		('033663654', N'Nguyễn Văn Chung', N'678 Nguyễn Tất Thành- Liên Chiểu','1996-02-25',196258945),
@@ -98,6 +98,15 @@ VALUES	('0398745212', N'Nguyễn Quốc Thiện', N'147 Phan Thanh-Thanh Khê','
 		('0935596339', N'Lê Uyên Thi','19 Hải Phòng-Thanh Khê', '2001-02-18', 197612167),
 		('0915606309', N'Dương Đức Tài', N'07 Tôn Đản-Cẩm Lệ', '1999-12-22', 197010666),
 		('0905202303', N'Trần Mỹ Uyên', N'77/2 Ngô Quyền-Sơn Trà', '2000-09-22', 197125201)
+
+INSERT INTO NHACUNGCAP
+VALUES	('NCC001', N'Cửa hàng thuê xe máy Tân Cương', '34 Nguyễn Công Trứ-Sơn Trà-Đà Nẵng','0123584692','123'),
+        ('NCC002', N'Cửa hàng thuê xe máy Anh Khoa', '84 Phan Chu Trinh-Hội An-Quảng Nam','0935439306','123'),
+		('NCC003', N'Cửa hàng thuê xe máy Hidibike', '24/11 Lý Thường Kiệt-Huế','0945418111','123'),
+		('NCC004', N'Cửa hàng thuê xe máy Gia Huy', '126/6 Trần Cao Vân-Thanh Khê-Đà Nẵng','0903529586','123'),
+		('NCC005', N'Cửa hàng thuê xe máy Bảo Tín', '70 Lê Hữu Trác- Đà Nẵng','0914039300','123'),
+		('NCC006', N'Cửa hàng thuê xe máy Minh Đồng', '111 Lý Thái Tổ-Hội An-Quảng Nam','0785854252','123'),
+		('NCC007', N'Dịch vụ thuê xe máy Hạnh Thảo','29c/103 Nhật Lệ-Huế','0985005113','123')	
 
 INSERT INTO XE(MaXe, LoaiXe, TenXe, BienSo, GiaXe, TrangThai,HinhAnh, MaNCC)
 VALUES	('MX0001', 'Honda', 'Vision', '43D1-25554', 150,1,'HondaVision.png','NCC001'),
@@ -185,12 +194,6 @@ VALUES	('MX0001', 'Honda', 'Vision', '43D1-25554', 150,1,'HondaVision.png','NCC0
 		('MX0083', 'Honda', 'SH', '75C1-03019', 180,0,'HondaSH.png','NCC007'),
 		('MX0084', 'Honda', 'Future', '75C1-12530', 110,0,'HondaFuture.png','NCC007')
 
+
 	
-INSERT INTO NHACUNGCAP
-VALUES	('NCC001', N'Cửa hàng thuê xe máy Tân Cương', '34 Nguyễn Công Trứ-Sơn Trà-Đà Nẵng','0123584692','123'),
-        ('NCC002', N'Cửa hàng thuê xe máy Anh Khoa', '84 Phan Chu Trinh-Hội An-Quảng Nam','0935439306','123'),
-		('NCC003', N'Cửa hàng thuê xe máy Hidibike', '24/11 Lý Thường Kiệt-Huế','0945418111','123'),
-		('NCC004', N'Cửa hàng thuê xe máy Gia Huy', '126/6 Trần Cao Vân-Thanh Khê-Đà Nẵng','0903529586','123'),
-		('NCC005', N'Cửa hàng thuê xe máy Bảo Tín', '70 Lê Hữu Trác- Đà Nẵng','0914039300','123'),
-		('NCC006', N'Cửa hàng thuê xe máy Minh Đồng', '111 Lý Thái Tổ-Hội An-Quảng Nam','0785854252','123'),
-		('NCC007', N'Dịch vụ thuê xe máy Hạnh Thảo','29c/103 Nhật Lệ-Huế','0985005113','123')				
+			

@@ -218,9 +218,7 @@
     <Content Include="Content\css\style-dangnhap.css" />
     <Content Include="Content\css\style-thongtinxe.css" />
     <Content Include="Content\css\style.css" />
-    <Content Include="Content\images\Honda AirBlade.png" />
     <Content Include="Content\images\HondaFuture125F1.png" />
-    <Content Include="Content\images\HondaLead.png" />
     <Content Include="Content\images\HondaWaveAlpha.png" />
     <Content Include="Content\images\HondaXr.png" />
     <Content Include="Content\images\Line.svg" />
