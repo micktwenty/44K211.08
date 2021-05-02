@@ -219,6 +219,7 @@
     <Content Include="Content\css\style-thongtinxe.css" />
     <Content Include="Content\css\style.css" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 =======
@@ -227,6 +228,8 @@
 =======
     <Content Include="Content\images\HondaAirBlade.png" />
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of e7cbda8 (update)
 =======
 >>>>>>> parent of e7cbda8 (update)
     <Content Include="Content\images\HondaFuture125F1.png" />

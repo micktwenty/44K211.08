@@ -121,6 +121,7 @@ VALUES	('MX0001', 'Honda', 'Vision', '43D1-25554', 150,1,'HondaVision.png','NCC0
 		('MX0010', 'Honda', 'Vision', '43D1-25554', 150,1,'HondaVision.png','NCC001'),
 		('MX0011', 'Yamaha', 'Latte', '43D1-25854', 150,1,'YamahaLatte.png','NCC001'),
 <<<<<<< HEAD
+<<<<<<< HEAD
 		('MX0012', 'Yamaha', 'Sirius', '92D1-15589', 100,0,'YamahaSirius.png','NCC001'),
 		('MX0013', 'Honda', 'AirBlade', '92D1-167258', 180,1,'HondaAirBlade.png','NCC001'),
 		('MX0014', 'Honda', 'Vision', '92P1-002345', 150,0,'HondaVision.png','NCC001'),
@@ -196,6 +197,8 @@ VALUES	('MX0001', 'Honda', 'Vision', '43D1-25554', 150,1,'HondaVision.png','NCC0
 		('MX0084', 'Honda', 'Future', '75C1-12530', 110,0,'HondaFuture.png','NCC001')
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> parent of e7cbda8 (update)
 		('MX0012', 'Yamaha', 'Sirius', '92D1-15589', 100,0,'YamahaSirius.png','NCC002'),
 		('MX0013', 'Honda', 'AirBlade', '92D1-167258', 180,1,'HondaAirBlade.png','NCC002'),
 		('MX0014', 'Honda', 'Vision', '92P1-002345', 150,0,'HondaVision.png','NCC002'),
@@ -269,6 +272,9 @@ VALUES	('MX0001', 'Honda', 'Vision', '43D1-25554', 150,1,'HondaVision.png','NCC0
 		('MX0082', 'Honda', 'AirBlade', '75D1-4100', 180,0,'HondaAirBlade.png','NCC007'),
 		('MX0083', 'Honda', 'SH', '75C1-03019', 180,0,'HondaSH.png','NCC007'),
 		('MX0084', 'Honda', 'Future', '75C1-12530', 110,0,'HondaFuture.png','NCC007')
+<<<<<<< HEAD
+>>>>>>> parent of e7cbda8 (update)
+=======
 >>>>>>> parent of e7cbda8 (update)
 
 =======
@@ -276,6 +282,7 @@ VALUES	('MX0001', 'Honda', 'Vision', '43D1-25554', 150,1,'HondaVision.png','NCC0
 
 	
 			
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 INSERT INTO NHACUNGCAP
@@ -290,5 +297,7 @@ VALUES	('NCC001', N'Cửa hàng thuê xe máy Tân Cương', '34 Nguyễn Công 
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of e7cbda8 (update)
 =======
 >>>>>>> parent of e7cbda8 (update)
