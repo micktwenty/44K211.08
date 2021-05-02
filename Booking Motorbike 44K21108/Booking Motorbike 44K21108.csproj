@@ -219,6 +219,10 @@
     <Content Include="Content\css\style-thongtinxe.css" />
     <Content Include="Content\css\style.css" />
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+    <Content Include="Content\images\HondaAirBlade.png" />
+>>>>>>> Stashed changes
 =======
     <Content Include="Content\images\HondaAirBlade.png" />
 >>>>>>> Stashed changes

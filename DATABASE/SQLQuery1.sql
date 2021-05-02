@@ -186,7 +186,10 @@ VALUES
 		('MX0082', 'Honda', 'AirBlade', '75D1-4100', 180,0,'HondaAirBlade.png','NCC001'),
 		('MX0083', 'Honda', 'SH', '75C1-03019', 180,0,'HondaSH.png','NCC001'),
 		('MX0084', 'Honda', 'Future', '75C1-12530', 110,0,'HondaFuture.png','NCC001')
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 
 	
 <<<<<<< Updated upstream
@@ -200,4 +203,7 @@ VALUES	('NCC001', N'Cửa hàng thuê xe máy Tân Cương', '34 Nguyễn Công 
 		('NCC001', N'Cửa hàng thuê xe máy Bảo Tín', '70 Lê Hữu Trác- Đà Nẵng','0914039300','123'),
 		('NCC001', N'Cửa hàng thuê xe máy Minh Đồng', '111 Lý Thái Tổ-Hội An-Quảng Nam','0785854252','123'),
 		('NCC001', N'Dịch vụ thuê xe máy Hạnh Thảo','29c/103 Nhật Lệ-Huế','0985005113','123')				
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
