@@ -189,37 +189,86 @@ VALUES
 		('MX0083', 'Honda', 'SH', '75C1-03019', 180,0,'HondaSH.png','NCC001'),
 		('MX0084', 'Honda', 'Future', '75C1-12530', 110,0,'HondaFuture.png','NCC001')
 --Thêm bản ghi mới vào bảng Thuê xe
-Create proc pDangKiThueXe( @MaHD varchar(50),
+alter proc pDangKiThueXe( 
 						   @SDT varchar(10),
 						   @NgayDangKi date,
-						   @NgayBD date,
-						   @NgayKT date,
-						   @ret bit out )
+						   @NgayBD date)
+						   
+						   --@ret bit out )
 as
 begin
+	declare @MaHD varchar(50)
 	declare @new_MaHD varchar(50)
 --Kiểm tra thời gian giao dịch có hợp lệ không? Nếu không, ngừng xử lý
 if @NgayBD > GETDATE()
-begin
-	set @ret = 0
-	return
-end
+--begin
+--	set @ret = 0
+--	return
+--end
 --Tính Mã HĐ mới
-set @MaHD = (Select top 1 MaHD from THUEXE
+
+
+	set @MaHD = (Select top 1 MaHD from THUEXE
 				order by MaHD desc)
-set @new_MaHD = 'HD' + SUBSTRING(@MaHD,3,4)
+
+set @new_MaHD = 'HD' + (Select Convert(varchar(50),(SUBSTRING(@MaHD,3,4)+1)))
 --Thêm mới bản ghi vào bảng thuê xe
-Insert into THUEXE(MaHD, NgayDangKi, NgayBD, NgayKT) values(@new_MaHD,@NgayDangKi,@NgayBD,@NgayKT)
-if @@ROWCOUNT <=0
-begin
-	set @ret = 0
-	return
-end
+Insert into THUEXE(MaHD,SDT, NgayDangKi, NgayBD) values(@new_MaHD,@SDT,@NgayDangKi,@NgayBD)
+--if @@ROWCOUNT <=0
+--begin
+--	set @ret = 0
+--	return
+--end
 end
 
+create proc pDangKiThueXe1( 
+						   @SDT varchar(10),
+						   @NgayDangKi date,
+						   @NgayBD date,
+						   @diachi nvarchar(500),
+						   @ngaysinh date,
+						   @ten nvarchar(200),
+						   @cmnd varchar(9))
+						   
+						   --@ret bit out )
+as
+begin
+	declare @MaHD varchar(50)
+	declare @new_MaHD varchar(50)
+--Kiểm tra thời gian giao dịch có hợp lệ không? Nếu không, ngừng xử lý
+if @NgayBD > GETDATE()
+--begin
+--	set @ret = 0
+--	return
+--end
+--Tính Mã HĐ mới
+
+
+	set @MaHD = (Select top 1 MaHD from THUEXE
+				order by MaHD desc)
+
+set @new_MaHD = 'HD' + (Select Convert(varchar(50),(SUBSTRING(@MaHD,3,4)+1)))
+
+INSERT INTO KHACHHANG
+VALUES	(@SDT,@ten, @diachi,@ngaysinh,@cmnd)
+--Thêm mới bản ghi vào bảng thuê xe
+Insert into THUEXE(MaHD,SDT, NgayDangKi, NgayBD) values(@new_MaHD,@SDT,@NgayDangKi,@NgayBD)
+--if @@ROWCOUNT <=0
+--begin
+--	set @ret = 0
+--	return
+--end
+end
 
 
 --Thêm bản ghi vào bảng khách hàng
+create proc spUpdate_Cus
 
-	
-			
+-- CODE TEST ĐÂU
+DECLARE @A BIT
+EXEC pDangKiThueXe1 '0935666666', '2021-05-03','2021-05-05','qưer','2000-08-09','vsdfsse','156329874'
+PRINT @A
+
+
+select * from thuexe
+INSERT INTO KHACHHANG VALUES ('HD0000', '0935639899','2021-05-03','2021-05-05','')
