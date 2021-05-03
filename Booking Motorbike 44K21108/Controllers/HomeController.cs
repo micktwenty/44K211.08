@@ -12,7 +12,7 @@ namespace Booking_Motorbike_44K21108.Controllers
 {
     public class HomeController : Controller
     {
-        BMEntities3 db = new BMEntities3();
+        BMEntities6 db = new BMEntities6();
         // GET: Home
         public ActionResult Index()
         {

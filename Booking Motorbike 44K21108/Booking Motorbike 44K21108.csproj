@@ -155,6 +155,36 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BM.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\BM2.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BM2.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BM2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BM2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BM2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BM2.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BMEE.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMEE.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BMEE.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMEE.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BMEE.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMEE.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\BMModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -171,7 +201,7 @@
       <DependentUpon>BMModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\FEEDBACK.cs">
-      <DependentUpon>BM.tt</DependentUpon>
+      <DependentUpon>BMEE.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Generated\Database.cs">
       <AutoGen>True</AutoGen>
@@ -185,20 +215,50 @@
       <DependentUpon>BMModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\KHACHHANG.cs">
-      <DependentUpon>BM.tt</DependentUpon>
+      <DependentUpon>BMEE.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.cs" />
+    <Compile Include="Models\Model2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model2.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model3.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model3.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model3.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\NHACUNGCAP.cs">
-      <DependentUpon>BM.tt</DependentUpon>
+      <DependentUpon>BMEE.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PetaPoco.cs" />
+    <Compile Include="Models\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>Model3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagrams_Result.cs">
+      <DependentUpon>Model3.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\sysdiagram.cs">
-      <DependentUpon>BM.tt</DependentUpon>
+      <DependentUpon>BM2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagrams.cs">
+      <DependentUpon>Model3.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\THUEXE.cs">
-      <DependentUpon>BM.tt</DependentUpon>
+      <DependentUpon>BMEE.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\XE.cs">
-      <DependentUpon>BM.tt</DependentUpon>
+      <DependentUpon>BMEE.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -272,6 +332,26 @@
       <DependentUpon>BM.edmx</DependentUpon>
       <LastGenOutput>BM.cs</LastGenOutput>
     </Content>
+    <Content Include="Models\BM2.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BM2.edmx</DependentUpon>
+      <LastGenOutput>BM2.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\BM2.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BM2.edmx</DependentUpon>
+      <LastGenOutput>BM2.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\BMEE.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BMEE.edmx</DependentUpon>
+      <LastGenOutput>BMEE.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\BMEE.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BMEE.edmx</DependentUpon>
+      <LastGenOutput>BMEE.cs</LastGenOutput>
+    </Content>
     <Content Include="Models\BMModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>BMModel.edmx</DependentUpon>
@@ -285,6 +365,16 @@
     <Content Include="Models\Generated\Database.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Database.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Model3.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model3.edmx</DependentUpon>
+      <LastGenOutput>Model3.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Model3.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model3.edmx</DependentUpon>
+      <LastGenOutput>Model3.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -303,6 +393,34 @@
     </EntityDeploy>
     <Content Include="Models\BM.edmx.diagram">
       <DependentUpon>BM.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\BM2.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BM2.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\BM2.edmx.diagram">
+      <DependentUpon>BM2.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\Model2.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model2.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Model2.edmx.diagram">
+      <DependentUpon>Model2.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\Model3.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model3.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Model3.edmx.diagram">
+      <DependentUpon>Model3.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\BMEE.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BMEE.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\BMEE.edmx.diagram">
+      <DependentUpon>BMEE.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
