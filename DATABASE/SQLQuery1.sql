@@ -260,11 +260,7 @@ Insert into THUEXE(MaHD,SDT, NgayDangKi, NgayBD) values(@new_MaHD,@SDT,@NgayDang
 --end
 end
 
-
---Thêm bản ghi vào bảng khách hàng
-create proc spUpdate_Cus
-
--- CODE TEST ĐÂU
+-- TEST
 DECLARE @A BIT
 EXEC pDangKiThueXe1 '0935666666', '2021-05-03','2021-05-05','qưer','2000-08-09','vsdfsse','156329874'
 PRINT @A
