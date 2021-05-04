@@ -11,7 +11,7 @@ namespace Booking_Motorbike_44K21108.Controllers
     public class SanPhamController : Controller
     {
         // GET: SanPham
-        BMEntities6 db = new BMEntities6();
+        BMEntities7 db = new BMEntities7();
         [ChildActionOnly]
         public ActionResult SanPhamStyle1Partial()
         {

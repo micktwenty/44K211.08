@@ -201,7 +201,7 @@
       <DependentUpon>BMModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\FEEDBACK.cs">
-      <DependentUpon>BMEE.tt</DependentUpon>
+      <DependentUpon>Model4.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Generated\Database.cs">
       <AutoGen>True</AutoGen>
@@ -215,9 +215,8 @@
       <DependentUpon>BMModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\KHACHHANG.cs">
-      <DependentUpon>BMEE.tt</DependentUpon>
+      <DependentUpon>Model4.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Model1.cs" />
     <Compile Include="Models\Model2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -238,8 +237,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model3.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Model4.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model4.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model4.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model4.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model4.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\NHACUNGCAP.cs">
-      <DependentUpon>BMEE.tt</DependentUpon>
+      <DependentUpon>Model4.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PetaPoco.cs" />
     <Compile Include="Models\sp_helpdiagramdefinition_Result.cs">
@@ -249,16 +263,16 @@
       <DependentUpon>Model3.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\sysdiagram.cs">
-      <DependentUpon>BM2.tt</DependentUpon>
+      <DependentUpon>Model4.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\sysdiagrams.cs">
       <DependentUpon>Model3.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\THUEXE.cs">
-      <DependentUpon>BMEE.tt</DependentUpon>
+      <DependentUpon>Model4.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\XE.cs">
-      <DependentUpon>BMEE.tt</DependentUpon>
+      <DependentUpon>Model4.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -376,6 +390,16 @@
       <DependentUpon>Model3.edmx</DependentUpon>
       <LastGenOutput>Model3.cs</LastGenOutput>
     </Content>
+    <Content Include="Models\Model4.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model4.edmx</DependentUpon>
+      <LastGenOutput>Model4.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Model4.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model4.edmx</DependentUpon>
+      <LastGenOutput>Model4.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Models\Generated\PetaPoco.Generator.ttinclude" />
@@ -422,6 +446,13 @@
     <Content Include="Models\BMEE.edmx.diagram">
       <DependentUpon>BMEE.edmx</DependentUpon>
     </Content>
+    <EntityDeploy Include="Models\Model4.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model4.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Model4.edmx.diagram">
+      <DependentUpon>Model4.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -456,6 +487,8 @@
     <Content Include="Views\TimKiem\KQTimKiem.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Home\DKT.cshtml" />
+    <Content Include="Views\Home\DKTS.cshtml" />
+    <Content Include="Views\Home\Fback.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\" />

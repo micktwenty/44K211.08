@@ -43,36 +43,42 @@
                 <p class="tab-text"></p>
                 <div class="register ">
 
-                    @using (Html.BeginForm())
+                    @using (Html.BeginForm("DKTS","Home",null,FormMethod.Post,new { id = "MyForm"}))
                     {
                         @Html.AntiForgeryToken()
 
-                        <div class="register-top-grid">
+                    <div class="register-top-grid">
 
 
-                            <span style="text-align:center">Họ và tên</span>
-                            @Html.TextBox("TenKH")
-                            <span style="text-align:center">Ngày sinh</span>
-                            @Html.TextBox("NgaySinh")
-                            <span style="text-align:center">CMND/CCCD</span>
-                            @Html.TextBox("CMND")
-                            <span style="text-align:center">Địa chỉ</span>
-                            @Html.TextBox("DiaChi")
-                            <span style="text-align:center">Số điện thoại</span>
-                            @Html.TextBox("SDT")
-                            <span style="text-align:center">Ngày thuê</span>
-                            @Html.TextBox("NgayBD")
+                        <span style="text-align:center">Họ và tên</span>
+                        @Html.TextBox("TenKH")
+                        <span style="text-align:center">Ngày sinh</span>
+                        @Html.TextBox("NgaySinh")
+                        <span style="text-align:center">CMND/CCCD</span>
+                        @Html.TextBox("CMND")
+                        <span style="text-align:center">Địa chỉ</span>
+                        @Html.TextBox("DiaChi")
+                        <span style="text-align:center">Số điện thoại</span>
+                        @Html.TextBox("SDT")
+                        <span style="text-align:center">Ngày thuê</span>
+                        @Html.TextBox("NgayBD")
+                        <span style="text-align:center">Mã Xe</span>
+                        @Html.TextBox("MaXe")
+                        
 
 
 
 
-                        </div>
 
-
+                    </div>
                         <div class="sign-up">
                             <input type="submit" value="Đăng Ký Thuê">
                         </div>
                     }
+
+
+
+
                 </div>
             </div>
             @*<div class="tab-2 resp-tab-content" aria-labelledby="tab_item-1">

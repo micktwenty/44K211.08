@@ -228,24 +228,43 @@
 
                             <li><a href="#review">Để lại đánh giá của bạn</a></li>
                         </ul>
-                        <div class="tab-pane fade">
+                      
 
                             <div class="review-form">
 
                                 <form name="form1" id="ff" method="post" action="review.php">
-                                    <label>
-                                        <span>Enter your name:</span>
-                                        <input type="text" name="name" id="name" required>
-                                    </label>
-                                    <label>
-                                        <span>Your message here:</span>
-                                        <textarea name="message" id="message"></textarea>
-                                    </label>
-                                    <div class="text-right">
-                                        <input class="btn btn-default" type="reset" name="reset" value="Reset">
-                                        <input class="btn btn-default" type="submit" name="Submit" value="Submit">
+                                    @using (Html.BeginForm("FBack", "Home", null, FormMethod.Post, new { id = "MyFBForm" }))
+                                    {
+                                        @Html.AntiForgeryToken()
+
+                                    <div class="register-top-grid">
+
+
+                                        <span style="text-align:center">Mã hóa đơn của bạn</span>
+                                        @Html.TextBox("MaHD")
+
+                                        <span style="text-align:center">Số điện thoại bạn dùng để đăng kí</span>
+                                        @Html.TextBox("SDT")
+
+                                        <span style="text-align:center">Mã xe mà bạn thuê</span>
+                                        @Html.TextBox("MaXe")
+
+
+                                        <span style="text-align:center">Nội dung feedback</span>
+                                        @Html.TextBox("FBack")
+
+
+
                                     </div>
-                                </form>
+
+
+                                        <div class="sign-up">
+                                            <input type="submit" value="Gửi">
+                                        </div>
+                                    }
+                                    </form>
+
+
                             </div>
                             @*<div id="description" class="tab-pane fade in active">
                                     <h4>Sample Lorem Ipsum Text</h4>
@@ -254,7 +273,7 @@
                                     <p>Sed eget turpis a pede tempor malesuada. Vivamus quis mi at leo pulvinar hendrerit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque aliquet lacus vitae pede. Nullam mollis dolor ac nisi. Phasellus sit amet urna. Praesent pellentesque sapien sed lacus. Donec lacinia odio in odio. In sit amet elit. Maecenas gravida interdum urna. Integer pretium, arcu vitae imperdiet facilisis, elit tellus tempor nisi, vel feugiat ante velit sit amet mauris. Vivamus arcu. Integer pharetra magna ac lacus. Aliquam vitae sapien in nibh vehicula auctor. Suspendisse leo mauris, pulvinar sed, tempor et, consequat ac, lacus. Proin velit. Nulla semper lobortis mauris. Duis urna erat, ornare et, imperdiet eu, suscipit sit amet, massa. Nulla nulla nisi, pellentesque at, egestas quis, fringilla eu, diam.</p>
                                 </div>*@
 
-                        </div>
+
                     </div>
                     @*<div class="product-related">
                             <div class="heading"><h2>RELATED PRODUCTS</h2></div>

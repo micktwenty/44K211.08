@@ -20,6 +20,5 @@ namespace Booking_Motorbike_44K21108.Models
         public string FBack { get; set; }
     
         public virtual XE XE { get; set; }
-        public virtual THUEXE THUEXE { get; set; }
     }
 }
