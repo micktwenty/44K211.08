@@ -116,17 +116,8 @@ namespace Booking_Motorbike_44K21108.Controllers
         }
   
         [HttpPost]
-        public ActionResult DKT(THUEXE tx)
+        public ActionResult DKT(FormCollection f)
         {
-            var check = db.KHACHHANGs.FirstOrDefault(s => s.SDT == tx.SDT);
-            if (check == null)
-            {
-
-            }
-            else
-            {
-
-            }
             return View();
         }
         public ActionResult Logout()
