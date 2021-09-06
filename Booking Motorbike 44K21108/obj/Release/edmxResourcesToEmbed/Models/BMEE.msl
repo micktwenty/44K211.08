@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BMModel4StoreContainer" CdmEntityContainer="BMEntities6">
+    <EntitySetMapping Name="FEEDBACKs">
+      <EntityTypeMapping TypeName="BMModel4.FEEDBACK">
+        <MappingFragment StoreEntitySet="FEEDBACK">
+          <ScalarProperty Name="MaHD" ColumnName="MaHD" />
+          <ScalarProperty Name="MaXe" ColumnName="MaXe" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="FBack" ColumnName="FBack" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KHACHHANGs">
+      <EntityTypeMapping TypeName="BMModel4.KHACHHANG">
+        <MappingFragment StoreEntitySet="KHACHHANG">
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="TenKH" ColumnName="TenKH" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="CMND" ColumnName="CMND" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NHACUNGCAPs">
+      <EntityTypeMapping TypeName="BMModel4.NHACUNGCAP">
+        <MappingFragment StoreEntitySet="NHACUNGCAP">
+          <ScalarProperty Name="MaNCC" ColumnName="MaNCC" />
+          <ScalarProperty Name="TenNCC" ColumnName="TenNCC" />
+          <ScalarProperty Name="DiaChi_NCC" ColumnName="DiaChi_NCC" />
+          <ScalarProperty Name="SDT_NCC" ColumnName="SDT_NCC" />
+          <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="THUEXEs">
+      <EntityTypeMapping TypeName="BMModel4.THUEXE">
+        <MappingFragment StoreEntitySet="THUEXE">
+          <ScalarProperty Name="MaHD" ColumnName="MaHD" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="NgayDangKi" ColumnName="NgayDangKi" />
+          <ScalarProperty Name="NgayBD" ColumnName="NgayBD" />
+          <ScalarProperty Name="NgayKT" ColumnName="NgayKT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="XEs">
+      <EntityTypeMapping TypeName="BMModel4.XE">
+        <MappingFragment StoreEntitySet="XE">
+          <ScalarProperty Name="MaXe" ColumnName="MaXe" />
+          <ScalarProperty Name="LoaiXe" ColumnName="LoaiXe" />
+          <ScalarProperty Name="TenXe" ColumnName="TenXe" />
+          <ScalarProperty Name="BienSo" ColumnName="BienSo" />
+          <ScalarProperty Name="GiaXe" ColumnName="GiaXe" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+          <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+          <ScalarProperty Name="ThongTin" ColumnName="ThongTin" />
+          <ScalarProperty Name="MaNCC" ColumnName="MaNCC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="pDangKiThueXe" FunctionName="BMModel4.Store.pDangKiThueXe" />
+    <FunctionImportMapping FunctionImportName="pDangKiThueXe1" FunctionName="BMModel4.Store.pDangKiThueXe1" />
+  </EntityContainerMapping>
+</Mapping>

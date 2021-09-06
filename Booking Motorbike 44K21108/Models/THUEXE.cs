@@ -14,20 +14,11 @@ namespace Booking_Motorbike_44K21108.Models
     
     public partial class THUEXE
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public THUEXE()
-        {
-            this.FEEDBACKs = new HashSet<FEEDBACK>();
-        }
-    
-        public string MaHD { get; set; }
+        public string MaXe { get; set; }
         public string SDT { get; set; }
-        public System.DateTime NgayDangKi { get; set; }
         public System.DateTime NgayBD { get; set; }
         public Nullable<System.DateTime> NgayKT { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<FEEDBACK> FEEDBACKs { get; set; }
         public virtual KHACHHANG KHACHHANG { get; set; }
     }
 }

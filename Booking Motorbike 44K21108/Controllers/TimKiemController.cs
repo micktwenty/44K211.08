@@ -10,7 +10,7 @@ namespace Booking_Motorbike_44K21108.Controllers
 {
     public class TimKiemController : Controller
     {
-        BMEntities3 db = new BMEntities3();
+        BMEntities7 db = new BMEntities7();
         
 
         [HttpGet]
@@ -22,7 +22,7 @@ namespace Booking_Motorbike_44K21108.Controllers
             }
             //Tìm Kiếm the tên sản phẩm
 
-            var lstSP = db.XEs.Where(n => n.TenXe.Contains(sTuKhoa) || n.LoaiXe.Contains(sTuKhoa));
+            var lstSP = db.XEs.Where(n => (n.TenXe.Contains(sTuKhoa) || n.LoaiXe.Contains(sTuKhoa))&& n.TrangThai == false);
             int pageSize = 21;
             int pageNumber = (page ?? 1);
             return View(lstSP.OrderBy(n => n.GiaXe).ToPagedList(pageNumber, pageSize));

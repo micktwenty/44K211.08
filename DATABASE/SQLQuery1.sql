@@ -189,7 +189,7 @@ VALUES
 		('MX0083', 'Honda', 'SH', '75C1-03019', 180,0,'HondaSH.png','NCC001'),
 		('MX0084', 'Honda', 'Future', '75C1-12530', 110,0,'HondaFuture.png','NCC001')
 --Thêm bản ghi mới vào bảng Thuê xe
-alter proc pDangKiThueXe( 
+create proc pDangKiThueXe( 
 						   @SDT varchar(10),
 						   @NgayDangKi date,
 						   @NgayBD date)
@@ -260,7 +260,11 @@ Insert into THUEXE(MaHD,SDT, NgayDangKi, NgayBD) values(@new_MaHD,@SDT,@NgayDang
 --end
 end
 
--- TEST
+
+--Thêm bản ghi vào bảng khách hàng
+create proc spUpdate_Cus
+
+-- CODE TEST ĐÂU
 DECLARE @A BIT
 EXEC pDangKiThueXe1 '0935666666', '2021-05-03','2021-05-05','qưer','2000-08-09','vsdfsse','156329874'
 PRINT @A
